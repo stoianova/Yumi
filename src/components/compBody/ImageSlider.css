@@ -1,0 +1,102 @@
+.image-slider {
+    width: 20%;
+    /* margin-right: 30rem; */
+    border-radius: 0.45rem;
+    background-color: #DFE7F6;
+    /* margin-top: 10rem; */
+    height: 24rem;
+    border-radius: 0.45rem;
+    box-shadow: 0px 0px 8px 5px rgb(195, 211, 240);
+  }
+  .image-slider .slick-dots {
+    color: #DFE7F6;
+  }
+  .image-slider img {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 2.2rem;
+  }
+
+  .slick-dots {
+    bottom: -19px;
+  }
+  .slick-prev {
+    left: .4rem;
+
+}
+.slick-next {
+  right: 0.4rem;
+}
+  .reviewDivs{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    /* background-color: #FAE9F2; */
+    height: 25rem;
+    /* margin-bottom: 5rem; */
+  }
+
+
+  .opinionSubmit{
+    width: 3%;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #56474F;
+    z-index: 1;
+    background: #ffffff;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    /* -webkit-box-shadow: 4px 8px 19px -3px #CEA8BB; */
+    /* box-shadow: 4px 8px 19px -3px #CEA8BB; */
+    transition: all 250ms;
+    overflow: hidden;
+  
+   }
+   
+  .opinionSubmit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    /* border-radius: 1rem; */
+    background-color: #56474F;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+  
+   }
+   
+   .opinionSubmit:hover {
+    color: #ffffff;
+  
+   }
+   
+   .opinionSubmit:hover::before {
+    width: 100%;
+  
+   }
+  
+  .opinionSubmit{
+    display: flex;
+    width: 4rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .opinionSubmit{
+    width: 11rem;
+    height: 2.5rem;
+  }
+  
+
+
+input, button, select, optgroup, textarea {
+  margin: auto;
+}

@@ -1,0 +1,65 @@
+#location{
+    background-color: #DFE7F6;
+    padding: 4rem 10rem;
+}
+.locMain{
+    display: flex;
+
+}
+#location > p:nth-child(1){
+    background-color: #fff;
+    display: flex;
+    width: 20rem;
+    margin: auto;
+    margin-bottom: 5rem;
+    height: 3rem;
+   justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.7rem;
+    letter-spacing: .5rem;
+}
+.imagggge{
+    width: 50rem;
+    height: 29rem;
+    background-color: white;
+    margin: 0rem 5rem 5rem 0rem;
+    border-radius: .8rem;
+    box-shadow: 0px 0px 8px 5px rgb(195, 211, 240);
+    background-color: rgb(255, 254, 255);
+}
+.imagggge img{
+    width: 50rem;
+    height: 29rem;
+    border-radius: .8rem;
+    box-shadow: 0px 0px 8px 5px rgb(195, 211, 240);
+    background-color: rgb(255, 254, 255);
+
+}
+.locDiv{
+    background-color: white;
+    width: 20rem;
+    height: 29rem;
+    padding: 3rem 3rem 1rem 3rem;
+    text-align: center;
+    border-radius: .8rem;
+    box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
+    background-color: rgb(254, 254, 255);
+}
+
+.locDiv > p:nth-child(2),
+.locDiv > p:nth-child(3){
+    font-weight: bold;
+}
+
+.locDiv > p:nth-child(5){
+    font-size: 1.7rem;
+}
+
+.fa-location-dot {
+    position: absolute;
+    top: 210rem;
+    left: 29rem;
+    z-index: 1;
+    height: 5rem;
+    }

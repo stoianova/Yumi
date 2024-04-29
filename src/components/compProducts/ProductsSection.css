@@ -1,0 +1,135 @@
+/* .image{
+    height: 7rem;
+    width: 5rem;
+} удалила из Кард.ссс */
+
+.productsSection,
+section{
+    height: /* 2000px; */ auto;
+    background-color: #FAE9F2;
+}
+
+.titleMenu{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #DEC4D1;
+    padding: 8rem 0rem;
+    text-align: center;
+}
+.card {
+    width: 20rem;
+    height: 27rem;
+    background-color: transparent;
+    border: none;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 10px 10px #DEC4D1;
+  /* cursor: pointer; */
+}
+
+.product,
+section,
+#linkToProducts{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  }
+#linkToProducts{
+  padding: 5rem 15rem;
+}
+
+
+.card img{
+    display: flex;
+    align-items: flex-end;
+    width: 12rem;
+    height: 17rem;
+    background-color: transparent;
+
+}
+
+.bottom {
+    display: flex;
+    align-items: flex-end;
+    height: 30rem;
+    justify-content: center;
+}
+
+  @media (min-width: 1200px) {
+    h2, .h2 {
+      font-size: 1.4rem;
+      margin: 1rem 0;
+      text-align: center;
+      color: #56474F;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    h3, .h3 {
+      font-size: 1.4rem;
+      text-align: center;
+      margin-top: 2.4rem;
+      font-weight: bolder;
+      color: #56474F;
+
+    }
+  }
+  
+
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 1000px;
+  }
+}
+
+.buttonAddProducts{
+    padding: 18px 10px;
+    border: unset;
+    border-radius: 15px;
+    color: #56474F;
+    z-index: 1;
+    background: #ffffff;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    transition: all 250ms;
+    overflow: hidden;
+    display: flex;
+    width: 4rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2.3rem;
+    margin-left: 15rem;
+    cursor: pointer;
+   }
+   
+   .buttonAddProducts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 1rem;
+    background-color: #56474F;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   .buttonAddProducts:hover {
+    color: #ffffff;
+   }
+   
+   .buttonAddProducts:hover::before {
+    width: 100%;
+   }
+  
+
+span{
+  color: #fff;
+}

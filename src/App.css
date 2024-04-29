@@ -1,0 +1,206 @@
+body{
+  color: #56474F ;
+}
+
+/* .warning{
+  height: 40px;
+  width: 250px;
+  background-color: coral;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  top: 10%;
+} */
+
+
+/* BODY */
+
+
+.welcomeDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 45rem;
+  height: 20rem;
+  background-color: #DFE7F6;
+  border-radius: 0.45rem;
+  margin-top: 6rem;
+  margin-left: 8rem;
+  display: grid;
+  grid-area: 1 / 6 ;
+  border-radius: .8rem;
+  box-shadow: 0px 0px 10px 10px #DFE7F6;
+  background-color: #f2f5fb;
+  
+}
+.welcome{
+  text-align: center;
+  background-color: white;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  width: 33rem;
+  font-size: 2.5rem;
+  border-radius: 0.45rem;
+  height: 4rem;
+}
+.welcomeText{
+  display: flex;
+  justify-content: right;
+  padding: 2.4rem 5rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.backImg{
+  margin-top: 3rem;
+  width: 45rem;
+  border-radius: 0.45rem;
+}
+
+.wrapperFirst{
+  width: 100%;
+  height: 150rem;
+  grid-template-columns: repeat(12, minmax(100px, 1fr));
+  grid-template-rows: repeat(12, minmax(100px, 1fr));
+}
+
+
+
+.menuDiv{
+  width: 32rem;
+  height: 20rem;
+  background-color: #ffffff;
+  border-radius: 0.45rem;
+  display: grid;
+  grid-area: 3/7;
+  margin-right: 50rem;
+  margin-top: 5rem;
+}
+
+
+.menufirst {
+  margin-left: 9.5rem;
+}
+
+.menusecond{
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  padding: 0rem 2rem;
+  text-align: center;
+  margin-top: 2rem;
+
+}
+
+
+.productCartFirst{
+  
+  background-color: #FAE9F2;
+  width: 35rem;
+  height: 45rem;
+  grid-area: 11/10/9/3;
+  margin-top: 8rem;
+  border-radius: 0.45rem;
+  box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
+}
+
+.SProductCardSecond{
+  width: 35rem;
+  height: 45rem;
+  background-color: #FAE9F2;
+  grid-area: 9/7/5/9;
+  margin-top: 5rem;
+  border-radius: 0.45rem;
+  box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
+}
+
+.SProductCardThird{
+  width: 30rem;
+  height: 41rem;
+  background-color: #FAE9F2;
+  margin-top: 4rem;
+  grid-area: 9/8;
+  margin-left: 3rem;
+  border-radius: 0.45rem;
+  box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
+}
+
+.SProductCardForth{
+  width: 28rem;
+  height: 38rem;
+  background-color: #FAE9F2;
+  grid-area: 6/2;
+  border-radius: 0.45rem;
+  box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
+}
+
+.productTextFirst > p:nth-child(1),
+.productTextSecond > p:nth-child(1),
+.productTextThird > p:nth-child(1),
+.productTextForth > p:nth-child(1) {
+  font-size: 1.35rem;
+  letter-spacing: .3rem;
+}
+.productTextFirst > p:nth-child(3),
+.productTextSecond > p:nth-child(3),
+.productTextThird > p:nth-child(3),
+.productTextForth > p:nth-child(3) {
+  font-weight: bold;
+  font-size: 1.15rem;
+
+}
+.productTextFirst > p:nth-child(2),
+.productTextSecond > p:nth-child(2),
+.productTextThird > p:nth-child(2),
+.productTextForth > p:nth-child(2) {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #c0b1b9;
+}
+
+/* 
+.reviewsDiv{
+  width: 30rem;
+  height: 30rem;
+  background-color: #DFE7F6; */
+  /* grid-area: 11/12/12/4; */
+  /* margin-top: 10rem;
+  border-radius: 0.45rem;
+} */
+
+
+
+
+
+
+
+
+.imageSecond img,
+.imageFirst img,
+.imageForth img,
+.imageThird img{
+  width: 90%;
+  margin: 5%;
+  border-radius: 0.45rem;
+}
+
+.productTextFirst,
+.productTextSecond,
+.productTextThird,
+.productTextForth{
+  margin: .5rem 2rem;
+}
+
+/* .warning{
+  width: 20rem;
+  height: 7rem;
+  background-color: #c0b1b9;
+  color: #56474F;
+  position: relative;
+  top: 200rem;
+  right: 20rem;
+} */
