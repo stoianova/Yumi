@@ -4,7 +4,7 @@ import "./Timer.css"
 function Timer() {
     const [seconds, setSeconds] = useState(59);
     const [minutes, setMinutes] = useState(29);
-    // const [timerDown, setTimerDown] = useState(false)
+    // const [timerDown, setTimerDown] = useState(false);
 
 
     let timer;

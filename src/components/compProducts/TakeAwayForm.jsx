@@ -8,8 +8,7 @@ import Timer from './Timer'
 import App, { Basket } from '../../App'
 
 
-function TakeAwayForm({setAway, cart, setShow, /* timerDown, */ setTimerDown}) {
-    // const [timerDown, setTimerDown] = useState(false)
+function TakeAwayForm({setAway, cart,  setTimerDown}) {
 
     const basket = useContext(Basket);
 
@@ -46,10 +45,12 @@ function TakeAwayForm({setAway, cart, setShow, /* timerDown, */ setTimerDown}) {
             // myObj.orderProdNew = orderProd.value
 
             let newArr = [cart.push(myObj)]
-            console.log(cart); 
-            // console.log(cart.push(myObj));
+            // console.log(cart); // выводит в консоль массив товаров в корзине
 
             localStorage.setItem('.order', JSON.stringify(myObj));
+            let jsonCart = JSON.stringify(cart)
+            localStorage.setItem('.orderProd', JSON.stringify(cart)); //выводит массив с двумя объектами: данные клиента, корзину
+
 
             setTimeout(function another(){
 
@@ -61,7 +62,6 @@ function TakeAwayForm({setAway, cart, setShow, /* timerDown, */ setTimerDown}) {
     }
 
     return (
-        <>
         <div className="takeAwayForm">
             <form action='' onChange={firstFun} onSubmit={secondFun} >
                     <div className="orderText"> Your details for TAKE AWAY </div>
@@ -88,16 +88,13 @@ function TakeAwayForm({setAway, cart, setShow, /* timerDown, */ setTimerDown}) {
 
             <div className="takeBtns">
                 <div className="btnBack" onClick={() => setAway(true)} >Back</div>
-                <input type="submit" id="submitButton" value="Send" disabled /* onClick={() => setTimerDown(true)} setShow={undefined} *//> 
+                <input type="submit" id="submitButton" value="Send" disabled/> 
                 <button onClick={() => setTimerDown(true)}>button</button>
             </div>    
-                {/* {
-                    timerDown ? <Timer setTimerDown={setTimerDown}/> : <div></div> 
-                }  */}
+
             </form>
             
         </div>
-        </>
     );
 
     };

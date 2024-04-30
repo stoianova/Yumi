@@ -15,7 +15,6 @@ const Header = ({size, setShow}) => {
             <header>
 
                 <div className="headerContentWrapper container d-flex justify-content-around ">
-
                     <div className="logo" onClick={()=>setShow(true)}>
                         <img src={logo} alt="logo" />
                     </div>

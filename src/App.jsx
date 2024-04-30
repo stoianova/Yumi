@@ -76,10 +76,6 @@ const App = () => {
       }
 
       {/* {
-        changeFromCartToTimer()
-      } */}
-
-      {/* {
         warning 'Item already added to your cart'
       } */}
 

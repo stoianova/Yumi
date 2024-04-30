@@ -13,6 +13,23 @@ body{
     z-index: 2;
     height: 7rem;
   }
+  @media(max-width: 1200px) {
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      /* flex-direction: column; */
+      }
+    li{
+      font-size: 1rem;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+    }
+    .logo img{
+      height: 2rem;
+    }
+
+  }
+  
   .logo img{
     height: 7rem;
     color: #56474F;

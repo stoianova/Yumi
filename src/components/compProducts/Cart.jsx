@@ -17,7 +17,7 @@ const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
     // const [timerDown, setTimerDown] = useState(false)
 
 
-    const closeMark = <FontAwesomeIcon icon={faXmark}/*  setShow={setShow} *//>
+    const closeMark = <FontAwesomeIcon icon={faXmark}/>
 
 
     const handlePrice = () => {
@@ -46,12 +46,8 @@ const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
         }
         else if (delivery !== true && away === true){ 
         return <DeliveryForm setDelivery={setDelivery}/>
-        }
-        // else if(delivery===true && away=== false && timerDown === true) {
-        // return <Timer/>
-        // }
-        
-    }
+        }   }
+
 
     return (
 
