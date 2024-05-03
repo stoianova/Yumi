@@ -74,7 +74,9 @@ const App = () => {
       {
         show ? <ProductsSection handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} setTimerDown={setTimerDown}/>
       }
-
+      {
+        <Timer />
+      }
       {/* {
         warning 'Item already added to your cart'
       } */}

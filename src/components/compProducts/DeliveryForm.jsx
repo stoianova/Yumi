@@ -1,8 +1,15 @@
-import React from 'react';
-import './DeliveryForm.css'
+import React, {useContext} from 'react';
+import './DeliveryForm.css';
+// import {myObj} from './Fetch/MyFetch';
 import {validName, validNumber, validStreet, validBuildNum, validApart} from './RegEx';
+import Cart from './Cart';
+import App, { Basket } from '../../App'
+import Timer from './Timer'
 
-function DeliveryForm({setDelivery}) {
+
+function DeliveryForm({setDelivery, cart, setTimerDown}) {
+
+    const basket = useContext(Basket);
 
     function firstFun(){
         let name = document.querySelector ('#name');
@@ -11,7 +18,6 @@ function DeliveryForm({setDelivery}) {
         let build = document.querySelector ('#build');
         let apart = document.querySelector ('#apart');
 
-        // let myAlert = document.querySelector("#alert");
 
         if(validNumber.test(number.value) && validName.test(name.value) && validStreet.test(street.value) && validBuildNum.test(build.value) && validApart.test(apart.value)){
             submitButton.removeAttribute('disabled')
@@ -33,7 +39,6 @@ function DeliveryForm({setDelivery}) {
         // }
         else{
             submitButton.setAttribute('disabled', true)
-            // myAlert.innerHTML = '<p>Your name is invalid</p>';
         }   
     }
 
@@ -45,23 +50,45 @@ function DeliveryForm({setDelivery}) {
             let street = document.querySelector ('#street');
             let build = document.querySelector ('#build');
             let apart = document.querySelector ('#apart');
-    
+            let comments = document.querySelector ('#comments');
 
-            let newObj = {
+            let myObj = {
                 nameNew: '',
                 numberNew: '',
                 streetNew: '',
                 buildNew: '',
                 apartNew: '',
+                commentsNew: ''
             }
 
-            newObj.nameNew = name.value
-            newObj.numberNew = number.value
-            newObj.streetNew = street.value
-            newObj.buildNew = build.value
-            newObj.apartNew = apart.value
+            myObj.nameNew = name.value
+            myObj.numberNew = number.value
+            myObj.streetNew = street.value
+            myObj.buildNew = build.value
+            myObj.apartNew = apart.value
+            myObj.commentsNew = comments.value
 
-            localStorage.setItem('.order', JSON.stringify(newObj));
+            // let newArr = [cart.push(myObj)]
+            // console.log(cart); // выводит в консоль массив товаров в корзине
+            // console.log(newArr);
+            // localStorage.setItem('.order', JSON.stringify(myObj)); это убираю и пишу ниже:
+
+            fetch('https://coffeemarket-775b0b283547.herokuapp.com/main/order/delivery', { 
+                method: 'POST', 
+                headers: { 'Content-Type': 'application/json' }, 
+                body: JSON.stringify(cart) 
+            }) 
+            .then(response => response.json()) 
+            .then(data => console.log(data)) 
+            .catch(error => console.error(error));
+
+            // let jsonCart = JSON.stringify(cart)
+            // localStorage.setItem('.orderDel', JSON.stringify(jsonCart)); //выводит массив с двумя объектами: данные клиента, корзину
+            // console.log(jsonCart);
+
+            let timer = document.querySelector('.timer')
+            timer.removeAttribute('hidden')
+
 
             setTimeout(function another(){
                 let inputs = document.querySelectorAll('input')
@@ -70,9 +97,7 @@ function DeliveryForm({setDelivery}) {
                 }
             }, 0)   }
 
-    
     return (
-        <>
         <div className="takeAwayForm">
             <form action='' onChange={firstFun} onSubmit={secondFun}>
                     <div className="orderText"> Your details for DELIVERY </div>
@@ -100,7 +125,6 @@ function DeliveryForm({setDelivery}) {
                 <label htmlFor="comments">Comments:</label>
                 <input type="text" name="comments" id="comments"/> 
                 
-                {/* <div id="alert"></div>                 */}
                 </div>
             </div>
 
@@ -108,13 +132,13 @@ function DeliveryForm({setDelivery}) {
 
                     <div className="btnBack" onClick={() => setDelivery(true)} >Back</div>
                     <input type="submit" id="submitButton" value="Send" disabled /> 
-
+                    
+                    <button onClick={() => setTimerDown(true)}>button</button>
                 </div>
 
             </form>
 
             </div>
-        </>
     );
 }
 

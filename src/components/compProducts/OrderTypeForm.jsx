@@ -6,7 +6,7 @@ import { faGlassWater, faCircle } from '@fortawesome/free-solid-svg-icons'
 
 
 
-const OrderTypeForm = ({setDelivery, setAway/* , setShow */}) => {
+const OrderTypeForm = ({setDelivery, setAway}) => {
 
     const glassIcon = <FontAwesomeIcon icon={faGlassWater} style={{color: "#99afd6",}} />
     const bubblesIcon = <FontAwesomeIcon icon={faCircle} bounce style={{color: "#a4b6d6",}} />

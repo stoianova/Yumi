@@ -3,5 +3,8 @@
 
 // console.log(myObj);
 
+// const myurl = 'https://swapi.dev/api/planets/1/'
+// let myObj = await (await fetch(myurl)).json();
 
+// export const myMenu = JSON.parse(myObj)
 

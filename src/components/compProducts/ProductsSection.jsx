@@ -1,21 +1,66 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../compProducts/ProductsSection.css';
-import listProducts from './Products.jsx';
+// import listProducts from './Products.jsx';
 import Card from '../compProducts/Card';
-// import {myObj} from './Fetch/MyFetch.jsx'
+// import myObj from './Fetch/MyFetch.jsx'
+// import { myMenu } from './Fetch/MyFetch';
 
 
 const ProductsSection = ({handleClick}) => {
+
+    const [showPosts, setShowPosts] = useState();
+    const myurl = 'https://coffeemarket-775b0b283547.herokuapp.com/main/';
+
+    async function pullJson() {
+        const response = await fetch(myurl)
+        const responseData = await response.json()
+        console.log(responseData)
+        let displayData = responseData.map(function(item) {
+            return(
+                <Card item={item} key={item.id} handleClick={handleClick}/>
+            )
+                // <p key={item.id}> {item.title} </p> 
+        })
+        console.log(responseData)
+        setShowPosts(displayData)
+    }
+    useEffect(() => {
+        pullJson()
+    }, [])
+
+    // function pullJson(){
+    //     fetch(myurl)
+    //         .then(response => response.json())
+    //         .then(responseData => {
+    //             // displayData =   УБРАТЬ
+    //             responseData.map((item)=>{
+    //                 return ( <Card item={item} key={item.id} handleClick={handleClick}/>)
+    //             })
+    //             // setShowPosts(displayData); УБРАТЬ
+    //             // console.log(responseData); УБРАТЬ
+    //         })
+    // }
+
+    // useEffect(()=> {
+    //     pullJson() 
+    // }, [])
+
+
+    // https://coffeemarket-775b0b283547.herokuapp.com/main/
+    // https://swapi.dev/api/planets/1/
 
     return (
 
         <section>
             <div id="linkToProducts">
-            {
-                /* myObj */ listProducts.map((item)=>(
+                {
+                    showPosts
+                }
+            {/* {
+                 listProducts myMenu.map((item)=>(
                     <Card item={item} key={item.id} handleClick={handleClick}/>
                 ))
-            }
+            } */}
         </div> </section>
     )
 }

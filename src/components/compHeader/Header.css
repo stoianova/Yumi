@@ -1,6 +1,11 @@
 body{
     color: #56474F ;
   }
+
+  .loginBtn{
+    width: 10rem;
+    height: 2rem;
+  }
   
   header{
     width: 100%;

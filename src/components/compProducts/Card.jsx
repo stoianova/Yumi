@@ -8,7 +8,7 @@ const Card = ({item, handleClick}) => {
 
     const buttonAddProducts = <FontAwesomeIcon icon={faBasketShopping} />
 
-        const {name, localname, price, image} = item;
+        const {name, localname, price, imagePath} = item;
     return (
         <div className='card'>
             
@@ -19,7 +19,7 @@ const Card = ({item, handleClick}) => {
             </div>
 
             <div className="bottom">
-                <img className='cardImg' src={image} alt="imageMenu" />
+                <img className='cardImg' src={imagePath.join('')} alt="imageMenu" />
             </div>
 
             <div className="buttonAddProducts" >

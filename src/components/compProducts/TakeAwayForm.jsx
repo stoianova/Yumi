@@ -29,27 +29,37 @@ function TakeAwayForm({setAway, cart,  setTimerDown}) {
             let number = document.querySelector ('#number');
             let time = document.querySelector ('#time');
             let comments = document.querySelector ('#comments');
-            // let orderProd = <Basket/>;
 
             let myObj = {
                 nameNew: '',
                 numberNew: '',
                 timeNew: '',
                 commentsNew: ''
-                // orderProdNew: ''
             }
             myObj.nameNew = name.value
             myObj.numberNew = number.value
             myObj.timeNew = time.value
             myObj.commentsNew = comments.value
-            // myObj.orderProdNew = orderProd.value
 
-            let newArr = [cart.push(myObj)]
+            // let newArr = [cart.push(myObj)]
             // console.log(cart); // выводит в консоль массив товаров в корзине
 
-            localStorage.setItem('.order', JSON.stringify(myObj));
-            let jsonCart = JSON.stringify(cart)
-            localStorage.setItem('.orderProd', JSON.stringify(cart)); //выводит массив с двумя объектами: данные клиента, корзину
+            // localStorage.setItem('.order', JSON.stringify(myObj));
+
+            fetch('https://coffeemarket-775b0b283547.herokuapp.com/main/order/takeAway', { 
+                method: 'POST', 
+                headers: { 'Content-Type': 'application/json' }, 
+                body: JSON.stringify(cart) 
+            }) 
+            .then(response => response.json()) 
+            .then(data => console.log(data)) 
+            .catch(error => console.error(error));
+
+            // let jsonCart = JSON.stringify(cart)
+            // localStorage.setItem('.orderTake', JSON.stringify(cart)); //выводит массив с двумя объектами: данные клиента, корзину
+
+            let timer = document.querySelector('.timer')
+            timer.removeAttribute('hidden')
 
 
             setTimeout(function another(){
@@ -89,11 +99,10 @@ function TakeAwayForm({setAway, cart,  setTimerDown}) {
             <div className="takeBtns">
                 <div className="btnBack" onClick={() => setAway(true)} >Back</div>
                 <input type="submit" id="submitButton" value="Send" disabled/> 
-                <button onClick={() => setTimerDown(true)}>button</button>
+                {/* <button onClick={() => setTimerDown(true)}>button</button> */}
             </div>    
 
             </form>
-            
         </div>
     );
 

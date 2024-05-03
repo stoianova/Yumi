@@ -45,18 +45,12 @@ const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
         return <TakeAwayForm setAway={setAway} setShow={setShow} cart={cart} setTimerDown={setTimerDown}/>
         }
         else if (delivery !== true && away === true){ 
-        return <DeliveryForm setDelivery={setDelivery}/>
+        return <DeliveryForm setDelivery={setDelivery} cart={cart}/>
         }   }
-
 
     return (
 
-        <article>
-
-                {/* {
-                    timerDown ? <Timer setTimerDown={setTimerDown}/> : <div></div> 
-                } */}
-           
+        <article>           
 
                 <div className="leftSideCart"> 
                     <div className='leftInnerScroll'>

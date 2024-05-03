@@ -5,10 +5,10 @@ article{
     margin-bottom: 20rem;
     display: flex;
     /* flex-direction: column; */
-    /* position: fixed;
+    position: fixed;
     top: 20%;
     left: 20%;
-    z-index: 3; */
+    z-index: 3;
 }
 .hidden{
     display: none;

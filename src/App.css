@@ -22,15 +22,15 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: end;
-  width: 45rem;
+  width: 45vw; /* 50%; */
   /* width: 50%; */
-  height: 20rem;
+  height: /* 20rem */ 41vh;
   background-color: #DFE7F6;
   border-radius: 0.45rem;
-  margin-top: 6rem;
-  margin-left: 8rem;
-  display: grid;
-  grid-area: 1 / 6 ;
+  margin-top: 14vh;
+  margin-left: 41.5vw;
+  /* display: grid;
+  grid-area: 1 / 6 ; */
   border-radius: .8rem;
   box-shadow: 0px 0px 10px 10px #DFE7F6;
   background-color: #f2f5fb;
@@ -39,25 +39,26 @@ body{
 .welcome{
   text-align: center;
   background-color: white;
-  margin-top: 3rem;
+  /* margin-top: 4vh; */
   display: flex;
   justify-content: center;
-  width: 33rem;
-  font-size: 2.5rem;
+  width: 35vw;
+  font-size: 4vh;
   border-radius: 0.45rem;
-  height: 4rem;
+  height: 9vh;
 }
 .welcomeText{
   display: flex;
   justify-content: right;
-  padding: 2.4rem 5rem;
-  font-size: 1.2rem;
+  /* padding: 2.4rem 5rem; */
+  padding: 2vw 5vw;
+  font-size: 1.2vw;
   text-align: center;
 }
 
 .backImg{
   margin-top: 3rem;
-  width: 45rem;
+  width: 44vw;
   border-radius: 0.45rem;
 }
 
@@ -66,33 +67,35 @@ body{
   height: 150rem;
   grid-template-columns: repeat(12, minmax(100px, 1fr));
   grid-template-rows: repeat(12, minmax(100px, 1fr));
+  margin-bottom: 70vh;
 }
 
 
 
 .menuDiv{
-  width: 32rem;
-  height: 20rem;
+  width: 29vw;
+  height: 10vh;
   background-color: #ffffff;
   border-radius: 0.45rem;
   display: grid;
   grid-area: 3/7;
-  margin-right: 50rem;
-  margin-top: 5rem;
+  margin-right: 15vw;
+  margin-top: 5vw; /**/
 }
 
 
-.menufirst {
-  margin-left: 9.5rem;
+.menufirst button{
+  /* margin-right: 57vw;
+  margin-top: 5vh; */
 }
 
 .menusecond{
-  font-size: 1.25rem;
+  font-size: 3.2vh;
   display: flex;
   justify-content: center;
-  padding: 0rem 2rem;
+  padding: 0vh 1.6vw;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1.6vh;
 
 }
 
@@ -100,39 +103,41 @@ body{
 .productCartFirst{
   
   background-color: #FAE9F2;
-  width: 35rem;
-  height: 45rem;
-  grid-area: 11/10/9/3;
-  margin-top: 8rem;
+  width: 29.5vw;
+  height: 81vh;
+  grid-area: 11/10/12/2;
+  margin-top: 10vh;
   border-radius: 0.45rem;
   box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
 }
 
 .SProductCardSecond{
-  width: 35rem;
-  height: 45rem;
+  width: 29.5vw;
+  height: 81vh;
   background-color: #FAE9F2;
   grid-area: 9/7/5/9;
-  margin-top: 5rem;
+  margin-top: 20vh;
+  margin-left: 10vw;
   border-radius: 0.45rem;
   box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
 }
 
 .SProductCardThird{
-  width: 30rem;
-  height: 41rem;
+  width: 27vw;
+  height: 77vh;
   background-color: #FAE9F2;
-  margin-top: 4rem;
-  grid-area: 9/8;
-  margin-left: 3rem;
+  margin-top: 15vh;
+  grid-area: 10/6;
   border-radius: 0.45rem;
   box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
 }
 
 .SProductCardForth{
-  width: 28rem;
-  height: 38rem;
+  width: 27vw;
+  height: 77vh;
   background-color: #FAE9F2;
+  margin-top: 10vh;
+  margin-left: 8vw;
   grid-area: 6/2;
   border-radius: 0.45rem;
   box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
@@ -142,7 +147,7 @@ body{
 .productTextSecond > p:nth-child(1),
 .productTextThird > p:nth-child(1),
 .productTextForth > p:nth-child(1) {
-  font-size: 1.35rem;
+  font-size: 2.5vh;
   letter-spacing: .3rem;
 }
 .productTextFirst > p:nth-child(3),
@@ -150,7 +155,7 @@ body{
 .productTextThird > p:nth-child(3),
 .productTextForth > p:nth-child(3) {
   font-weight: bold;
-  font-size: 1.15rem;
+  font-size: 2.4vh;
 
 }
 .productTextFirst > p:nth-child(2),
@@ -159,19 +164,16 @@ body{
 .productTextForth > p:nth-child(2) {
   font-weight: bold;
   font-style: italic;
-  font-size: 1.15rem;
+  font-size: 2.5vh;
   color: #c0b1b9;
 }
 
-/* 
+
 .reviewsDiv{
-  width: 30rem;
-  height: 30rem;
-  background-color: #DFE7F6; */
-  /* grid-area: 11/12/12/4; */
-  /* margin-top: 10rem;
-  border-radius: 0.45rem;
-} */
+
+  background-color: #DFE7F6; 
+  margin-left: 80%;
+}
 
 
 
@@ -193,7 +195,7 @@ body{
 .productTextSecond,
 .productTextThird,
 .productTextForth{
-  margin: .5rem 2rem;
+  margin: 0.8vh 1.684vw;
 }
 
 /* .warning{
@@ -220,31 +222,50 @@ body{
   }
 } */
 
-@media screen (min-width: 415px) and (max-width: 700px){
-  .wrapperFirst{
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* flex-direction: column; */
-    }
+/* @media screen and (min-width: 415px) and (max-width: 700px){
+
   .backImg{
     width: 15rem;
     margin-top: 1rem;
   }
   .wrapperFirst{
-    width: 100%;
+    width: 50rem;
     background-color: aqua;
-    /* grid-template-columns: 4.5rem 7rem 3rem 7rem 4.5rem; */
   }
   .welcomeDiv{
-    width: 70%;
+    width: 20rem;
+    margin-left: -174%;
+    height: 15rem;
     display: flex;
-
-    font-size: .5rem;
-    /* grid-area: 1/4; */
-    margin-left: 0%;
   }
   .welcome{
-    font-size: 1rem;
-    width: 5rem;
+    font-size: .7rem;
+    width: 80%;
   }
+.menuDiv{
 }
+.wrapperFirst > a:nth-child(4) {
+  margin-top: 36em;
+  margin-right: 2vw;
+}
+} */
+
+
+
+
+/* Inline #1 | http://localhost:5173/#linkToProducts */
+
+
+/* Inline #3 | http://localhost:5173/#linkToProducts */
+
+/* @media screen and (min-width: 415px) and (max-width: 700px) {
+  .menuDiv {
+    width: 15rem;
+    margin-left: -37rem;
+  }
+  .menufirst {
+    width: 20%;
+    height: 30%;
+  }
+} */
+
