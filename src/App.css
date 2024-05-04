@@ -67,7 +67,6 @@ body{
   height: 150rem;
   grid-template-columns: repeat(12, minmax(100px, 1fr));
   grid-template-rows: repeat(12, minmax(100px, 1fr));
-  margin-bottom: 70vh;
 }
 
 
@@ -104,7 +103,7 @@ body{
   
   background-color: #FAE9F2;
   width: 29.5vw;
-  height: 36rem;
+  height: 37.5rem;
   grid-area: 8/10/12/2;
   margin-top: 29vh;
   border-radius: 0.45rem;
@@ -113,7 +112,7 @@ body{
 
 .SProductCardSecond{
   width: 29.5vw;
-  height: 36rem;
+  height: 37.5rem;
   background-color: #FAE9F2;
   grid-area: 9/7/5/9;
   margin-top: 20vh;
@@ -124,21 +123,23 @@ body{
 
 .SProductCardThird{
   width: 27vw;
-  height: 33rem;
+  height: 36rem;
   background-color: #FAE9F2;
   /* margin-bottom: 30vh; */
   grid-area: 9/7;
+  margin-top: 5rem;
   border-radius: 0.45rem;
   box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
 }
 
 .SProductCardForth{
   width: 27vw;
-  height: 33rem;
+  height: 35rem;
   background-color: #FAE9F2;
   /* margin-top: 10vh; */
   margin-left: 8vw;
   grid-area: 5/2;
+  margin-top: 4rem;
   border-radius: 0.45rem;
   box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
 }
@@ -167,19 +168,6 @@ body{
   font-size: 2.5vh;
   color: #c0b1b9;
 }
-
-
-.reviewsDiv{
-
-  background-color: #DFE7F6; 
-  margin-left: 80%;
-}
-
-
-
-
-
-
 
 
 .imageSecond img,

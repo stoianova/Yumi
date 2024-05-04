@@ -18,11 +18,12 @@ function Section(props) {
                 <SProductCardSecond/>
                 <SProductCardThird/>
                 <SProductCardForth/>
-                {/* <ImageSlider/> */}
 
             </div>
 
             <div className="wrapperSecond">
+                <ImageSlider/>
+
                 <Location />
             </div>
         </>
