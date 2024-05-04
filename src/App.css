@@ -104,16 +104,16 @@ body{
   
   background-color: #FAE9F2;
   width: 29.5vw;
-  height: 81vh;
-  grid-area: 11/10/12/2;
-  margin-top: 10vh;
+  height: 36rem;
+  grid-area: 8/10/12/2;
+  margin-top: 29vh;
   border-radius: 0.45rem;
   box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
 }
 
 .SProductCardSecond{
   width: 29.5vw;
-  height: 81vh;
+  height: 36rem;
   background-color: #FAE9F2;
   grid-area: 9/7/5/9;
   margin-top: 20vh;
@@ -124,21 +124,21 @@ body{
 
 .SProductCardThird{
   width: 27vw;
-  height: 77vh;
+  height: 33rem;
   background-color: #FAE9F2;
-  margin-top: 15vh;
-  grid-area: 10/6;
+  /* margin-bottom: 30vh; */
+  grid-area: 9/7;
   border-radius: 0.45rem;
   box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
 }
 
 .SProductCardForth{
   width: 27vw;
-  height: 77vh;
+  height: 33rem;
   background-color: #FAE9F2;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   margin-left: 8vw;
-  grid-area: 6/2;
+  grid-area: 5/2;
   border-radius: 0.45rem;
   box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
 }
