@@ -57,6 +57,7 @@
 
 .btnBack{
     width: 5rem;
+    height: 3rem;
     text-align: center;
     padding: 0.5rem 0rem;
     border: unset;
@@ -66,11 +67,10 @@
     background: #deebff3c;
     position: relative;
     font-size: 1rem;
-    /* margin: 1rem 0rem 2rem 4rem; */
     margin-left: 2rem;
-    /* margin-top: 2rem; */
     transition: all 250ms;
     overflow: hidden;
+    cursor: pointer;
 }
 .btnBack:hover{
     color: #ffffff;

@@ -69,7 +69,6 @@ const App = () => {
     <Basket.Provider value={cart}>
 
       <Header size={cart.length} setShow={setShow}/>
-      <h1>{`Hello ${cart}`}</h1>
 
       {
         show ? <ProductsSection handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} setTimerDown={setTimerDown}/>

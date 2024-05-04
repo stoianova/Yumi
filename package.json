@@ -1,6 +1,7 @@
 {
   "name": "yumiproject",
   "private": true,
+  "proxy": "https://coffeemarket-775b0b283547.herokuapp.com/main/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

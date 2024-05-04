@@ -1,7 +1,7 @@
 import React, { useState, useContext, createContext } from 'react';
 import './TakeAwayForm.css'
 import './DeliveryForm.css';
-import {validName, validNumber} from './RegEx';
+// import {validName, validNumber} from './RegEx';
 import Cart from './Cart';
 // import {myObj} from './Fetch/MyFetch';
 import Timer from './Timer'
@@ -15,14 +15,17 @@ function TakeAwayForm({setAway, cart,  setTimerDown}) {
     function firstFun(){
         let name = document.querySelector ('#name');
         let number = document.querySelector ('#number');
+        let time = document.querySelector ('#time');
+        let comments = document.querySelector ('#comments');
 
-        if(validNumber.test(number.value) && validName.test(name.value)){
+
+        if(number.value.length >1 && name.value.length >1 && time.value.length >1 && comments.value.length >1){
             submitButton.removeAttribute('disabled')
         }
         else{
             submitButton.setAttribute('disabled', true)
         }   }
-
+ 
         function secondFun(e){
             e.preventDefault()
             let name = document.querySelector ('#name');
@@ -41,22 +44,29 @@ function TakeAwayForm({setAway, cart,  setTimerDown}) {
             myObj.timeNew = time.value
             myObj.commentsNew = comments.value
 
-            // let newArr = [cart.push(myObj)]
-            // console.log(cart); // выводит в консоль массив товаров в корзине
-
-            // localStorage.setItem('.order', JSON.stringify(myObj));
-
-            fetch('https://coffeemarket-775b0b283547.herokuapp.com/main/order/takeAway', { 
-                method: 'POST', 
-                headers: { 'Content-Type': 'application/json' }, 
-                body: JSON.stringify(cart) 
-            }) 
-            .then(response => response.json()) 
-            .then(data => console.log(data)) 
-            .catch(error => console.error(error));
-
-            // let jsonCart = JSON.stringify(cart)
-            // localStorage.setItem('.orderTake', JSON.stringify(cart)); //выводит массив с двумя объектами: данные клиента, корзину
+            fetch('https://coffeemarket-775b0b283547.herokuapp.com/main/order/takeAway', {
+                method: 'POST',
+                mode: 'cors',
+                credentials: 'omit',
+                body: JSON.stringify(
+                    {
+                        nameNew: 'Иван Иванов',
+                        numberNew: '380967986930',
+                        timeNew: '14:00',
+                        commentsNew: 'Без острых специй, пожалуйста'
+                    }
+                ),
+                headers: {
+                  'Content-type': 'application/json; charset=UTF-8',
+                },
+              })
+                 .then((response) => response.json())
+                 .then((data) => {
+                    console.log(data);
+                 })
+                 .catch((err) => {
+                    console.log(err.message);
+                 });
 
             let timer = document.querySelector('.timer')
             timer.removeAttribute('hidden')
@@ -73,7 +83,7 @@ function TakeAwayForm({setAway, cart,  setTimerDown}) {
 
     return (
         <div className="takeAwayForm">
-            <form action='' onChange={firstFun} onSubmit={secondFun} >
+            <form action='' className='delTypeForm' onChange={firstFun} onSubmit={secondFun} >
                     <div className="orderText"> Your details for TAKE AWAY </div>
 
                 <div className="innerFormDiv">

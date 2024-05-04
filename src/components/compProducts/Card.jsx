@@ -19,7 +19,7 @@ const Card = ({item, handleClick}) => {
             </div>
 
             <div className="bottom">
-                <img className='cardImg' src={imagePath.join('')} alt="imageMenu" />
+                <img className='cardImg' src={imagePath} alt="imageMenu" />
             </div>
 
             <div className="buttonAddProducts" >

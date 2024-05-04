@@ -68,23 +68,33 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
             myObj.apartNew = apart.value
             myObj.commentsNew = comments.value
 
-            // let newArr = [cart.push(myObj)]
-            // console.log(cart); // выводит в консоль массив товаров в корзине
-            // console.log(newArr);
-            // localStorage.setItem('.order', JSON.stringify(myObj)); это убираю и пишу ниже:
 
-            fetch('https://coffeemarket-775b0b283547.herokuapp.com/main/order/delivery', { 
-                method: 'POST', 
-                headers: { 'Content-Type': 'application/json' }, 
-                body: JSON.stringify(cart) 
-            }) 
-            .then(response => response.json()) 
-            .then(data => console.log(data)) 
-            .catch(error => console.error(error));
+            fetch('https://coffeemarket-775b0b283547.herokuapp.com/main/order/delivery', {
+                method: 'POST',
+                mode: 'cors',
+                credentials: 'omit',
+                body: JSON.stringify(
+                    {
+                        nameNew: "Иван Иванов",
+                        numberNew: "380967986930",
+                        streetNew: "Ленина",
+                        buildNew: "12",
+                        apartNew: "34",
+                        commentsNew: "Позвоните по прибытию"
+                    }
+                ),
+                headers: {
+                  'Content-type': 'application/json; charset=UTF-8',
+                },
+              })
+                 .then((response) => response.json())
+                 .then((data) => {
+                    console.log(data);
+                 })
+                 .catch((err) => {
+                    console.log(err.message);
+                 });
 
-            // let jsonCart = JSON.stringify(cart)
-            // localStorage.setItem('.orderDel', JSON.stringify(jsonCart)); //выводит массив с двумя объектами: данные клиента, корзину
-            // console.log(jsonCart);
 
             let timer = document.querySelector('.timer')
             timer.removeAttribute('hidden')
@@ -99,7 +109,7 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
 
     return (
         <div className="takeAwayForm">
-            <form action='' onChange={firstFun} onSubmit={secondFun}>
+            <form action='' className='delTypeForm' onChange={firstFun} onSubmit={secondFun}>
                     <div className="orderText"> Your details for DELIVERY </div>
 
                 {/* <div className='biggerDelForm'> */}
@@ -107,19 +117,19 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
                 <div className='orderForm'>
 
  
-                <label htmlFor="name">Type your name</label>
+                <label htmlFor="name">Type your name *</label>
                 <input type="text" name="name" id="name"/> 
 
-                <label htmlFor="number">Enter your phone number</label>
+                <label htmlFor="number">Enter your phone number *</label>
                 <input type="number" name="number" id="number"/> 
 
-                <label htmlFor="street">Street</label>
+                <label htmlFor="street">Street *</label>
                 <input type="text" name="street" id="street"/> 
 
-                <label htmlFor="build">Building number</label>
+                <label htmlFor="build">Building number *</label>
                 <input type="text" name="build" id="build"/> 
 
-                <label htmlFor="apart">Apartment number</label>
+                <label htmlFor="apart">Apartment number *</label>
                 <input type="number" name="apart" id="apart"/> 
 
                 <label htmlFor="comments">Comments:</label>
@@ -133,7 +143,7 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
                     <div className="btnBack" onClick={() => setDelivery(true)} >Back</div>
                     <input type="submit" id="submitButton" value="Send" disabled /> 
                     
-                    <button onClick={() => setTimerDown(true)}>button</button>
+                    {/* <button onClick={() => setTimerDown(true)}>button</button> */}
                 </div>
 
             </form>

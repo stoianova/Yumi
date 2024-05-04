@@ -67,7 +67,7 @@ const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
                             </div>
 
                             <div className="infoCartRight">
-                                <img src={item.image}/> <br />
+                                <img src={item.imagePath}/> <br />
                             </div>
 
                         <div className='buttonsCart'>
