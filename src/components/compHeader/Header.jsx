@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBasketShopping, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import Body from '../compBody/Section'
 // import Login from '../FormsBackEnd/Login'
+import '../CSS/Body.css';
 
 
 const Header = ({size, setShow}) => {
@@ -38,7 +39,7 @@ const Header = ({size, setShow}) => {
                         
                     </div>
                         
-                        <button className='loginBtn'> <a href='https://coffeemarket-775b0b283547.herokuapp.com/login/' /> </button>
+                        {/* <button className='loginBtn'> <a href='https://coffeemarket-775b0b283547.herokuapp.com/login/' /> </button> */}
 
 
 

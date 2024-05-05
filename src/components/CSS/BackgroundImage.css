@@ -106,7 +106,7 @@
     border-radius: 0.45rem;
     box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
     width: 30rem;
-    height: 37.5rem;
+    height: 39rem;
 }
 .productTextFirst > p:nth-child(1),
 .productTextSecond > p:nth-child(1),
@@ -170,18 +170,15 @@
 
 
 @media screen and (max-width: 1200px){
-    .backImg{
-        width: 28rem;
-    }
     .welcomeDiv{
         height: 65%;
+        display: none;
       }
     .menuDiv{
         grid-area: 2/2;
-        padding-bottom: 10rem;
+        margin-top: 5rem;
     } 
     .allProdCards{
-        background-color: darkkhaki; 
         display: flex;
         flex-wrap: wrap;
     }
@@ -189,4 +186,28 @@
         width: 30rem;
         height: 5rem;
     }
+    .productTextFirst > p:nth-child(1),
+.productTextSecond > p:nth-child(1),
+.productTextThird > p:nth-child(1),
+.productTextForth > p:nth-child(1) {
+  font-size: 70%;
+}
+.productTextFirst > p:nth-child(3),
+.productTextSecond > p:nth-child(3),
+.productTextThird > p:nth-child(3),
+.productTextForth > p:nth-child(3) {
+  font-size: 65%;
+}
+.productTextFirst > p:nth-child(2),
+.productTextSecond > p:nth-child(2),
+.productTextThird > p:nth-child(2),
+.productTextForth > p:nth-child(2) {
+  font-size: 60%;
+}
+.productTextFirst,
+.productTextSecond,
+.productTextThird,
+.productTextForth{
+  margin: 0% 5%;
+}
 }
