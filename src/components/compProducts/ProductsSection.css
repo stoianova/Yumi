@@ -20,12 +20,14 @@ section{
     text-align: center;
 } */
 .card {
-    width: 16.842vw;
-    height: 47vh;
+  width: 14rem;
+  height: 17.5rem;
     background-color: transparent;
     border: none;
-    margin-right: 3vw;
-    margin-bottom: 7vh;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  color: #56474F;
 }
 
 .card:hover{
@@ -35,27 +37,31 @@ section{
 .name,
 .localname,
 .price{
-  font-size: 2.2vh;
+  font-size: 90%;
+  margin-top: 8%;
 }
-.price{
-  margin-top: 1vh;
+.price,
+.name{
+  font-weight: 700;
 }
+
 .product,
 section,
 #linkToProducts{
   display: grid;
   grid-template-columns: repeat(3, auto);
+  gap: 2rem;
   }
 #linkToProducts{
-  padding: 9vh 12.632vw;
+  padding: 3rem;
 }
 
 
 .card img{
     display: flex;
     align-items: flex-end;
-    width: 10.1vw;
-    height: 30vh;
+    width: 7.5rem;
+    height: 10rem;
     background-color: transparent;
     margin-bottom: .5rem;
 }
@@ -63,41 +69,20 @@ section,
 .bottom {
     display: flex;
     align-items: flex-end;
-    height: 48vh;
+    height: 48vh; /**/
     justify-content: center;
 }
-
-  @media (min-width: 1200px) {
-    h2, .h2 {
-      font-size: 1.4rem;
-      margin: 1rem 0;
-      text-align: center;
-      color: #56474F;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    h3, .h3 {
-      font-size: 1.4rem;
-      text-align: center;
-      margin-top: 2.4rem;
-      font-weight: bolder;
-      color: #56474F;
-
-    }
-  }
-  
 
 .buttonAddProducts{
     padding: 18px 10px;
     border: unset;
     border-radius: 15px;
-    color: #56474F;
+    color: #ae7c97;
     z-index: 1;
     background: #ffffff;
     position: relative;
     font-weight: 1000;
-    font-size: 17px;
+    font-size: 1.3rem;
     transition: all 250ms;
     overflow: hidden;
     display: flex;
@@ -106,10 +91,8 @@ section,
     align-items: center;
     justify-content: center;
     margin-top: -2.5rem;
-    margin-left: 12rem;
     cursor: pointer;
    }
-   
    .buttonAddProducts::before {
     content: "";
     position: absolute;
@@ -118,22 +101,18 @@ section,
     height: 100%;
     width: 0;
     border-radius: 1rem;
-    background-color: #56474F;
+    background-color: #b78aa2;
     z-index: -1;
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms
    }
-   
    .buttonAddProducts:hover {
     color: #ffffff;
    }
-   
    .buttonAddProducts:hover::before {
     width: 100%;
    }
-  
-
 span{
   color: #fff;
 }

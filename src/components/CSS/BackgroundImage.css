@@ -167,49 +167,158 @@
 .ProductCardForth{
   grid-area: 5/5
 }
-.fa-location-dot {
-  position: absolute;
-  top: 17rem;
-  left: 15rem;
-  z-index: 1;
-  height: 6rem;
-  }
 
 
-@media screen and (max-width: 1200px){
-    .welcomeDiv{
-        height: 65%;
-        display: none;
-      }
-    .menuDiv{
-        grid-area: 2/2;
-        margin-top: 5rem;
-    } 
-    .allProdCards{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .productCartFirst{
-        width: 30rem;
-        height: 5rem;
-    }
-    .productTextFirst > p:nth-child(1),
+@media screen and (min-width:1024px) and (max-width: 1240px){
+.welcomeDiv{
+  padding: 1rem 0rem;
+}
+.allProdCards{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5rem; /* 5%; */
+  height: auto;
+  margin-bottom: 2rem;
+}
+.productCartFirst,
+.ProductCardSecond,
+.ProductCardThird,
+.ProductCardForth{
+  width: 25rem;
+  height: 31rem;
+}
+.productTextFirst > p:nth-child(1),
 .productTextSecond > p:nth-child(1),
 .productTextThird > p:nth-child(1),
 .productTextForth > p:nth-child(1) {
-  font-size: 70%;
+  font-size: 100%;
+  margin-bottom: 2%;
 }
 .productTextFirst > p:nth-child(3),
 .productTextSecond > p:nth-child(3),
 .productTextThird > p:nth-child(3),
 .productTextForth > p:nth-child(3) {
-  font-size: 65%;
+  font-size: 95%;
 }
 .productTextFirst > p:nth-child(2),
 .productTextSecond > p:nth-child(2),
 .productTextThird > p:nth-child(2),
 .productTextForth > p:nth-child(2) {
-  font-size: 60%;
+  font-size: 90%;
+  margin-bottom: 2%;
+}
+.productTextFirst,
+.productTextSecond,
+.productTextThird,
+.productTextForth{
+  margin: 0% 5%;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+.backImg{
+  width: 30rem;
+}
+.welcomeDiv{
+  height: 65%;
+  padding: 1rem 0rem;
+}
+.menuDiv{
+  grid-area: 1/2;
+  margin-top: 35rem;
+} 
+.welcomeImageDiv{
+  height: 35rem;
+}
+.allProdCards{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  margin: 2rem;
+  height: auto;
+}
+.productCartFirst,
+.ProductCardSecond,
+.ProductCardThird,
+.ProductCardForth{
+  width: 20rem;
+  height: 27rem;
+}
+.productTextFirst > p:nth-child(1),
+.productTextSecond > p:nth-child(1),
+.productTextThird > p:nth-child(1),
+.productTextForth > p:nth-child(1) {
+  font-size: 100%;
+  margin-bottom: 2%;
+}
+.productTextFirst > p:nth-child(3),
+.productTextSecond > p:nth-child(3),
+.productTextThird > p:nth-child(3),
+.productTextForth > p:nth-child(3) {
+  font-size: 95%;
+}
+.productTextFirst > p:nth-child(2),
+.productTextSecond > p:nth-child(2),
+.productTextThird > p:nth-child(2),
+.productTextForth > p:nth-child(2) {
+  font-size: 90%;
+  margin-bottom: 2%;
+}
+.productTextFirst,
+.productTextSecond,
+.productTextThird,
+.productTextForth{
+  margin: 0% 5%;
+}
+}
+
+@media (max-width: 768px) {
+.welcomeDiv{
+  display: none;
+}
+.menuDiv{
+  display: none;
+} 
+.backImg{
+  display: none;
+}
+.welcomeImageDiv{
+  display: none;
+}
+.allProdCards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  margin: 2rem;
+}
+.productCartFirst,
+.ProductCardSecond,
+.ProductCardThird,
+.ProductCardForth{
+  width: 20rem;
+  height: 27rem;
+}
+.productTextFirst > p:nth-child(1),
+.productTextSecond > p:nth-child(1),
+.productTextThird > p:nth-child(1),
+.productTextForth > p:nth-child(1) {
+  font-size: 100%;
+  margin-bottom: 2%;
+}
+.productTextFirst > p:nth-child(3),
+.productTextSecond > p:nth-child(3),
+.productTextThird > p:nth-child(3),
+.productTextForth > p:nth-child(3) {
+  font-size: 95%;
+}
+.productTextFirst > p:nth-child(2),
+.productTextSecond > p:nth-child(2),
+.productTextThird > p:nth-child(2),
+.productTextForth > p:nth-child(2) {
+  font-size: 90%;
+  margin-bottom: 2%;
 }
 .productTextFirst,
 .productTextSecond,

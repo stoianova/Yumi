@@ -4,6 +4,7 @@ import '../compProducts/ProductsSection.css';
 import Card from '../compProducts/Card';
 // import myObj from './Fetch/MyFetch.jsx'
 // import { myMenu } from './Fetch/MyFetch';
+import '../CSS/Body.css'
 
 
 const ProductsSection = ({handleClick}) => {
@@ -19,7 +20,6 @@ const ProductsSection = ({handleClick}) => {
             return(
                 <Card item={item} key={item.id} handleClick={handleClick}/>
             )
-                // <p key={item.id}> {item.title} </p> 
         })
         console.log(responseData)
         setShowPosts(displayData)
@@ -57,7 +57,7 @@ const ProductsSection = ({handleClick}) => {
                     showPosts
                 }
             {/* {
-                 listProducts myMenu.map((item)=>(
+                 listProducts.map((item)=>(
                     <Card item={item} key={item.id} handleClick={handleClick}/>
                 ))
             } */}
