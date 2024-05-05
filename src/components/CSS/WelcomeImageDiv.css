@@ -1,0 +1,192 @@
+.backImg{
+    margin-top: 3rem;
+    width: /* 44vw; */ 42rem;
+    border-radius: 0.45rem;
+}
+.welcomeDiv{
+    border-radius: 0.45rem;
+    box-shadow: 0px 0px 10px 10px #DFE7F6;
+    background-color: #f2f5fb;
+    margin-top: 5rem;
+    margin-right: 5rem;
+    padding: 2rem;
+    grid-area: 1/2;
+    height: 90%;
+  }
+  .welcome{
+      text-align: center;
+      background-color: white;
+      border-radius: 0.45rem;
+      font-size: /* 150%; */ 2vw;
+      width: 70% /* 32rem; */
+  }
+  .welcomeText{
+      padding: 2rem 2rem;
+      font-size: 1.2vw;
+      text-align: center;
+  }
+  .menuDiv{
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      grid-area: 2/2;
+  } 
+
+  .menusecond{
+      font-size: 1.5vw;
+      text-align: center;
+      }
+.welcomeImageDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 20rem);
+    gap: 3rem;
+}
+
+
+
+
+
+.menufirst{
+    letter-spacing: .3rem;
+     --glow-color: #967989;
+     --glow-spread-color: #CEA8BB;
+     --enhanced-glow-color: #CEA8BB;
+     --btn-color: #FAE9F2;
+     border: .0em solid var(--glow-color);
+     padding: 0.55em 2.1em;
+     color: var(--glow-color);
+     font-size: 30px;
+     font-weight: bold;
+     background-color: var(--btn-color);
+     border-radius: 0.45em;
+     outline: none;
+     box-shadow: 0 0 .2em .1em var(--glow-color),
+            0 0 2em 1em var(--glow-spread-color),
+            outset 0 0 0.2em .1em var(--glow-color);
+     text-shadow: 0 0 0em var(--glow-color);
+     position: relative;
+     transition: all 0.3s;
+     margin: 2rem;
+    }
+    
+    .menufirst::after {
+     pointer-events: none;
+     content: "";
+     position: absolute;
+     top: 120%;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     filter: blur(2em);
+     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+    }
+    
+    .menufirst:hover {
+     color: var(--btn-color);
+     background-color: var(--glow-color);
+     box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 1em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+    }
+    
+    .menufirst:active {
+     box-shadow: 0 0 0.6em .25em var(--glow-color),
+            0 0 2.5em 2em var(--glow-spread-color),
+            inset 0 0 .5em .25em var(--glow-color);
+    }
+
+.productCartFirst,
+.ProductCardSecond,
+.ProductCardThird,
+.ProductCardForth{
+    background-color: #FAE9F2;
+    border-radius: 0.45rem;
+    box-shadow: 0px 0px 8px 5px rgb(239, 218, 231);
+    width: 30rem;
+    height: 37.5rem;
+}
+.productTextFirst > p:nth-child(1),
+.productTextSecond > p:nth-child(1),
+.productTextThird > p:nth-child(1),
+.productTextForth > p:nth-child(1) {
+  font-size: 2.5vh;
+  letter-spacing: .3rem;
+}
+.productTextFirst > p:nth-child(3),
+.productTextSecond > p:nth-child(3),
+.productTextThird > p:nth-child(3),
+.productTextForth > p:nth-child(3) {
+  font-weight: bold;
+  font-size: 2.4vh;
+}
+.productTextFirst > p:nth-child(2),
+.productTextSecond > p:nth-child(2),
+.productTextThird > p:nth-child(2),
+.productTextForth > p:nth-child(2) {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2.5vh;
+  color: #c0b1b9;
+}
+.imageSecond img,
+.imageFirst img,
+.imageForth img,
+.imageThird img{
+  width: 90%;
+  margin: 5%;
+  border-radius: 0.45rem;
+}
+.productTextFirst,
+.productTextSecond,
+.productTextThird,
+.productTextForth{
+  margin: 0.8vh 1.684vw;
+}
+
+.allProdCards{
+  display: grid;
+  grid-template-columns: repeat(10, 10rem);
+  grid-template-rows: repeat(10, 10rem);
+  column-gap: 3rem;
+  row-gap: 1rem;
+  margin-top: 8rem;
+  height: 90rem;
+}
+.productCartFirst{
+  grid-area: 1/2;
+}
+.ProductCardSecond{
+  grid-area: 1/5;
+}
+.ProductCardThird{
+  grid-area: 5/2
+}
+.ProductCardForth{
+  grid-area: 5/5
+}
+
+
+@media screen and (max-width: 1200px){
+    .backImg{
+        width: 28rem;
+    }
+    .welcomeDiv{
+        height: 65%;
+      }
+    .menuDiv{
+        grid-area: 2/2;
+        padding-bottom: 10rem;
+    } 
+    .allProdCards{
+        background-color: darkkhaki; 
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .productCartFirst{
+        width: 30rem;
+        height: 5rem;
+    }
+}

@@ -2,7 +2,7 @@ import React, {useState, useEffect, createContext} from 'react';
 import './App.css';
 import Header from './components/compHeader/Header';
 import ProductsSection from './components/compProducts/ProductsSection'
-import Footer from './components/compFooter/Footer';
+import Footer from './components/compHeader/Footer';
 import Cart from './components/compProducts/Cart';
 import Timer from './components/compProducts/Timer';
 import TakeAwayForm from './components/compProducts/TakeAwayForm';
@@ -48,18 +48,6 @@ const App = () => {
     setCart([...tempArr])
   }
 
-  // function changeFromCartToTimer (){
-  //   if(show===true){
-  //     return <ProductsSection handleClick={handleClick}/>
-  //   }
-  //   else if (show === false) {
-  //     return <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} />
-  //   }
-  //   else if( show === undefined & timerDown === true){
-  //     return <Timer setShow={setShow} setTimerDown={setTimerDown}/>
-  //   }
-  // }
-
   {
     timerDown ? <Timer setTimerDown={setTimerDown}/> : <div></div> 
   } 
@@ -67,23 +55,20 @@ const App = () => {
 
   return (
     <Basket.Provider value={cart}>
-
+      <div className='mediaDivFirst'>
       <Header size={cart.length} setShow={setShow}/>
 
       {
         show ? <ProductsSection handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} setTimerDown={setTimerDown}/>
       }
+      </div>
+      
       {
         <Timer />
       }
-      {/* {
-        warning 'Item already added to your cart'
-      } */}
 
       <Footer/>
     
-
-
     </Basket.Provider>
   )
  

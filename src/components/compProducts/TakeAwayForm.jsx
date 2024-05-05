@@ -63,6 +63,7 @@ function TakeAwayForm({setAway, cart,  setTimerDown}) {
                  .then((response) => response.json())
                  .then((data) => {
                     console.log(data);
+                    // console.log(cart);
                  })
                  .catch((err) => {
                     console.log(err.message);

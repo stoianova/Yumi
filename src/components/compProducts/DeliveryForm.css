@@ -12,7 +12,7 @@
     margin: 1rem;
     padding: 1rem 0rem; 
     height: 22rem;/* 18rem; */
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .orderText{
     margin: 2rem auto;
@@ -72,11 +72,9 @@ label{
 .biggerDelForm{
     height: 30rem;
     overflow: scroll;
-
 }
 .innerFormDiv{
     margin-right: 2rem;
-    /* width: 25rem; */
 }
 .deliveryForm{
     width: 50%;
@@ -87,14 +85,3 @@ label{
     box-shadow: 0px 0px 8px 5px rgb(195, 211, 240);
     background-color: rgb(254, 254, 255);
 }
-
-/* #alert{
-    width: 50rem;
-    height: 10rem;
-    background-color: blue;
-    position: absolute;
-    top: 20rem;
-    right: 50rem;
-    z-index: 3;
-    color: aliceblue;
-} */

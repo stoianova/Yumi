@@ -1,0 +1,28 @@
+.footer{
+    background-color: #FAE9F2;
+    height: 7rem;
+    width: 100%;
+
+}
+
+.wrapperFooter{
+    width: 40rem;
+    padding-top: 1rem;
+}
+
+.brandicons{
+    width: 8rem;
+    /* margin-top: 2rem; */
+    margin-bottom: 1rem;
+}
+
+.fa-whatsapp {
+    height: 2rem;
+}
+.fa-instagram {
+    height: 2rem;
+}
+.footerText{
+    text-align: center;
+}
+  

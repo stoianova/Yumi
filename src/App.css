@@ -73,7 +73,7 @@ body{
 
 .menuDiv{
   width: 29vw;
-  height: 10vh;
+  height: 7vw;
   background-color: #ffffff;
   border-radius: 0.45rem;
   display: grid;
@@ -194,23 +194,25 @@ body{
   position: relative;
   top: 200rem;
   right: 20rem;
-} */
+}  */
 
-/* @media(max-width: 1200px) {
+ /* @media(max-width: 1200px) {
   .wrapperFirst{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 20% 60% 20%);
     }
   .backImg{
-    width: 15rem;
-    margin-top: 0rem;
+    margin-left: 2rem;
   }
   .logo img{
     height: 2rem;
   }
-} */
+  .welcomeDiv{
+    grid-area: 1/2;
+  }
+}  */
 
-/* @media screen and (min-width: 415px) and (max-width: 700px){
+ /* @media screen and (min-width: 415px) and (max-width: 700px){
 
   .backImg{
     width: 15rem;
@@ -230,14 +232,12 @@ body{
     font-size: .7rem;
     width: 80%;
   }
-.menuDiv{
-}
+
 .wrapperFirst > a:nth-child(4) {
   margin-top: 36em;
   margin-right: 2vw;
 }
-} */
-
+ } */
 
 
 
@@ -257,3 +257,14 @@ body{
   }
 } */
 
+@media(max-width: 700px){
+  .mediaDivFirst{
+
+    background-color: darkkhaki;
+    grid-area: 2/3;
+  }
+  .mediaDivFirst > *{
+    margin: 0;
+    padding: 0;
+  }
+}

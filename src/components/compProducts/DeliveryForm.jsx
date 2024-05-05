@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import './DeliveryForm.css';
 // import {myObj} from './Fetch/MyFetch';
-import {validName, validNumber, validStreet, validBuildNum, validApart} from './RegEx';
 import Cart from './Cart';
 import App, { Basket } from '../../App'
 import Timer from './Timer'
@@ -17,26 +16,12 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
         let street = document.querySelector ('#street');
         let build = document.querySelector ('#build');
         let apart = document.querySelector ('#apart');
+        let comments = document.querySelector ('#comments');
 
 
-        if(validNumber.test(number.value) && validName.test(name.value) && validStreet.test(street.value) && validBuildNum.test(build.value) && validApart.test(apart.value)){
+        if(number.value.length == 12 && name.value.length >1 && street.value.length >1 && build.value.length >1 && apart.value.length >1 && comments.value.length >1 ){
             submitButton.removeAttribute('disabled')
         }
-        // else if(validName.test(name)){
-        //     myAlert.innerHTML = '<p>Your name is invalid</p>';
-        // }
-        // else if(validNumber.test(number)){
-        //     myAlert.innerHTML = '<p>Your number should starts from 0*********</p>';
-        // }        
-        // else if(validStreet.test(street)){
-        //     myAlert.innerHTML = '<p>Your street should contain letters only</p>';
-        // }        
-        // else if(validBuildNum.test(build)){
-        //     myAlert.innerHTML = '<p>Your building number should contain digits only</p>';
-        // }
-        // else if(validApart.test(apart)){
-        //     myAlert.innerHTML = '<p>Your apartment should contain digits only</p>';
-        // }
         else{
             submitButton.setAttribute('disabled', true)
         }   

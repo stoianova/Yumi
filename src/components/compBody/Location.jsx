@@ -1,13 +1,14 @@
 import React from 'react';
-import './Location.css'
+// import './Location.css'
 import ImageLocation from '../../img/location.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import '../CSS/Body.css'
 
 
 const locationIcon = <FontAwesomeIcon icon={faLocationDot} beat style={{color: "#a06e89",}} />
 
-function Location(props) {
+function Location() {
     return (
         <div id='location'>
             <p>Location</p>
