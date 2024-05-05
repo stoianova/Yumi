@@ -4,7 +4,7 @@ import SecondProduct from '../../img/fixed/fix5.jpeg';
 import ThirdProduct from '../../img/fixed/fix2.jpeg'
 import ForthProduct from '../../img/fixed/fix1.jpeg';
 import '../CSS/Body.css'
-import '../CSS/WelcomeImageDiv.css'
+import '../CSS/BackgroundImage.css'
 
 
 function SProductCardFirst() {

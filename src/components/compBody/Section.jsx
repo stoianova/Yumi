@@ -1,31 +1,26 @@
 import React from 'react';
 import BackgroundImage from './BackgroundImage'
 import SProductCardFirst from './SProductCardFirst'
-import SProductCardSecond from './SProductCardSecond';
-import SProductCardThird from './SProductCardThird';
-import SProductCardForth from './SProductCardForth';
+// import SProductCardSecond from './SProductCardSecond';
+// import SProductCardThird from './SProductCardThird';
+// import SProductCardForth from './SProductCardForth';
 import ImageSlider from './ImageSlider';
 import Location from './Location';
+import '../CSS/Body.css'
+import '../CSS/BackgroundImage.css'
 
 
 
-function Section(props) {
+function Section() {
     return (
         <>
-            <div className="wrapperFirst d-grid">
-                <BackgroundImage />
-                <SProductCardFirst />
-                <SProductCardSecond/>
-                <SProductCardThird/>
-                <SProductCardForth/>
+            <BackgroundImage />
+            <SProductCardFirst />
 
-            </div>
-
-            <div className="wrapperSecond">
-                <ImageSlider/>
-
-                <Location />
-            </div>
+        <div className="wrapperSecond">
+            <ImageSlider/>
+            <Location />
+        </div>
         </>
     );
 }
