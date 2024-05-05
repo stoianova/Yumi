@@ -137,9 +137,7 @@ h2{
     margin: 0;
     
   }
-  .headerContentWrapper{
-    /* width: 10rem; */
-}
+
   .welcomeImageDiv{
     display: grid;
     grid-template-columns: repeat(4,6rem);
