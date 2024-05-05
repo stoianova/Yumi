@@ -63,8 +63,10 @@
 
 .fa-location-dot {
     position: absolute;
-    /* top: 150rem; */
-    left: 30rem;
+    top: 15rem;
+    left: 15rem;
     z-index: 1;
     height: 9rem;
     }
+
+  

@@ -4,6 +4,7 @@ import ImageLocation from '../../img/location.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import '../CSS/Body.css'
+import '../CSS/BackgroundImage.css'
 
 
 const locationIcon = <FontAwesomeIcon icon={faLocationDot} beat style={{color: "#a06e89",}} />

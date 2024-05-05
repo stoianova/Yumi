@@ -88,12 +88,12 @@
     font-size: 3vh;
 }
 .fa-location-dot {
-    position: absolute;
-    top: 203rem;
-    left: 30rem;
-    z-index: 1;
-    height: 4rem;
-}
+  position: absolute;
+  top: 15rem;
+  left: 15rem;
+  z-index: 1;
+  height: 9rem;
+  }
 /* Timer */
 .timer{
   width: 15rem;
