@@ -226,29 +226,11 @@ h2{
 }
 
 
-/* MENU */
-
-@media screen and (min-width:1024px) and (max-width: 1240px){
-  #linkToProducts{
-    display: flex;
-    flex-wrap: wrap;
-  }
+/* @media screen and (min-width:1024px) and (max-width: 1240px){
 }
-
-
 
 @media (min-width: 768px) and (max-width: 1024px){
-  #linkToProducts{
-    display: grid;
-    grid-template-columns: 30rem;
-  }
-  section{
-    display: grid;
-    grid-template-columns: 30rem;
-  }
 }
-
 
 @media (max-width: 768px){
-
-}
+} */

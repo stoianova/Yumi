@@ -10,7 +10,7 @@ const instagram = <FontAwesomeIcon icon={faInstagram} />
 function Footer(props) {
     return (
         <>
-        <div className='footer'>
+        <div className='footer container-fluid'>
             <div className="wrapperFooter container">
 
                 <div className="brandicons container d-flex justify-content-between">

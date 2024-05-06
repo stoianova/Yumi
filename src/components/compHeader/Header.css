@@ -2,10 +2,10 @@ body{
     color: #56474F ;
   }
 
-  .loginBtn{
+  /* .loginBtn{
     width: 10rem;
     height: 2rem;
-  }
+  } */
   
   header{
     width: 100%;
@@ -16,36 +16,36 @@ body{
     top: 0;
     left: 0;
     z-index: 2;
-    height: 7rem;
+    height: 5.5rem;
   }
-  .logo img{
+  /* .logo img{
     height: 7rem;
     color: #56474F;
     cursor: pointer;
-  }
+  } */
   
-  .headerContentWrapper{
+  /* .headerContentWrapper{
     align-items: center;
     height: 4rem;
     margin-top: 1.5rem;
-  }
+  } */
   
-  ul{
+  /* ul{
     display: flex;
     font-size: 1.4rem;
     outline: none;
     margin-top: 0;
-  }
-  li{
+  } */
+  /* li{
     list-style: none;
     cursor:  pointer;
     width: 9rem;
     letter-spacing: .3rem;
-  }
-  li:hover{
+  } */
+  /* li:hover{
     color: #ffffff;
     font-size: larger;
-  }
+  } */
 /* 
   .headerContentWrapper > ul:nth-child(2) > a:nth-child(1),
   .headerContentWrapper > ul:nth-child(2) > a:nth-child(2),
@@ -154,10 +154,13 @@ body{
 .logoNewHead{
   height: 6rem;
   margin-right: 5rem;
+  cursor: pointer;
 }
 .nav-link{
   width: 8rem;
   font-size: 1.4rem;
   letter-spacing: .3rem;
-
+}
+.nav-link:hover{
+  color: #ffffff;
 }

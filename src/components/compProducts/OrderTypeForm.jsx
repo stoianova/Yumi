@@ -1,15 +1,15 @@
 import React, {useState} from 'react';
 import './Cart.css'
 import './OrderTypeForm.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlassWater, faCircle } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faGlassWater, faCircle } from '@fortawesome/free-solid-svg-icons'
 
 
 
 const OrderTypeForm = ({setDelivery, setAway}) => {
 
-    const glassIcon = <FontAwesomeIcon icon={faGlassWater} style={{color: "#99afd6",}} />
-    const bubblesIcon = <FontAwesomeIcon icon={faCircle} bounce style={{color: "#a4b6d6",}} />
+    // const glassIcon = <FontAwesomeIcon icon={faGlassWater} style={{color: "#99afd6",}} />
+    // const bubblesIcon = <FontAwesomeIcon icon={faCircle} bounce style={{color: "#a4b6d6",}} />
 
     return (
         <>
@@ -22,10 +22,10 @@ const OrderTypeForm = ({setDelivery, setAway}) => {
                 </div>
             </div>
 
-            <div className='bubbleIcon'>
+            {/* <div className='bubbleIcon'>
                 {bubblesIcon}{bubblesIcon}{bubblesIcon}{bubblesIcon}{bubblesIcon}{bubblesIcon}{bubblesIcon}
                 {glassIcon}
-            </div>
+            </div> */}
             
         </>
     );

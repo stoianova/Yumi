@@ -74,3 +74,28 @@
     font-size: .7rem;
     font-weight: lighter;
 }
+
+
+@media screen and (min-width:1024px) and (max-width: 1240px){
+
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    
+}
+
+@media (max-width: 768px){
+    .takeAwayForm{
+        width: 70%;
+        border-bottom-left-radius: .8rem;
+        border-bottom-right-radius: .8rem;
+        border-top-right-radius: .0rem;
+
+    }
+    input{
+        padding: .2rem .5rem;
+    }
+    
+}

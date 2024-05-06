@@ -1,24 +1,9 @@
-/* .image{
-    height: 7rem;
-    width: 5rem;
-} удалила из Кард.ссс */
-
 .productsSection,
 section{
     height: auto;
-    /* background-color: #FAE9F2; */
     display: flex;
     justify-content: center;
 }
-
-
-/* .titleMenu{
-    font-size: 2rem;
-    font-weight: bold;
-    color: #DEC4D1;
-    padding: 8rem 0rem;
-    text-align: center;
-} */
 .card {
   width: 14rem;
   height: 17.5rem;
@@ -28,11 +13,11 @@ section{
     margin-bottom: 2rem;
     text-align: center;
   color: #56474F;
-}
+  box-shadow: 0px 0px 13px 5px #eadae2;
 
+}
 .card:hover{
   box-shadow: 0px 0px 20px 20px #DEC4D1;
-  /* cursor: pointer; */
 }
 .name,
 .localname,
@@ -50,10 +35,10 @@ section,
 #linkToProducts{
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 2rem;
+  /* gap: 2rem; */
   }
 #linkToProducts{
-  padding: 3rem;
+  padding: 3rem 0rem;
 }
 
 
@@ -115,4 +100,22 @@ section,
    }
 span{
   color: #fff;
+}
+
+@media screen and (min-width:1024px) and (max-width: 1240px){
+
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  #linkToProducts{
+    display: grid;
+    grid-template-columns: 20% 20%;
+    column-gap: 30%;
+  }
+}
+
+@media (max-width: 768px){
+  #linkToProducts{
+    display: grid;
+    grid-template-columns: 20%;
+  }
 }

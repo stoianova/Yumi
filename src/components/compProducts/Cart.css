@@ -5,10 +5,10 @@ article{
     margin-bottom: 20rem;
     display: flex;
     /* flex-direction: column; */
-    /* position: fixed;
+    position: fixed;
     top: 20%;
     left: 20%;
-    z-index: 3; */
+    z-index: 3;
 }
 .hidden{
     display: none;
@@ -28,6 +28,7 @@ article{
 }
 .infoCartleft{
     width: 50%;
+    font-size: 100%;
 }
 .infoCartRight{
     width: 35%;
@@ -117,21 +118,6 @@ article{
     font-style: italic;
     margin-bottom: 2rem;
 }
-
-/* .btnNext{
-    margin: 1rem;
-    border: none;
-    border-radius: 0.2rem;
-    box-shadow: 0px 0px 5.2px 0px rgb(195, 211, 240);
-    background-color: rgb(254, 254, 255);
-    color: #4D5E7C;
-}
-.btnNext:hover{
-    background-color: #C3D3F0;
-    font-size: larger;
-    box-shadow: 0px 0px 10px 10px rgb(195, 211, 240);
-
-} */
 .bottomPart{
     display: flex;
     flex-direction: column;
@@ -168,6 +154,75 @@ article{
 }
 
 
+
+@media screen and (min-width:1024px) and (max-width: 1240px){
+    article{
+        width: 80%;
+        top: 10%;
+        left: 10%;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    article{
+        width: 90%;
+        top: 15%;
+        left: 5%;
+    }
+    .cartObject img{
+        height: 90%;
+    }
+    .infoCartleft{
+        font-size: 90%;
+    }
+    .infoCartRight{
+        width: 35%;
+    }
+    
+    
+}
+
+@media (max-width: 768px){
+    article{
+        width: 70%;
+        height: auto;
+        flex-direction: column;
+        top: 10%;
+        left: 0%;
+    }
+    .cartBox{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .cartObject{
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+    .leftSideCart{
+        width: 80%;
+        height: auto;
+        border-bottom-left-radius: .0rem;
+        border-top-right-radius: .8rem;
+        overflow: scroll;
+    }
+    
+    .infoCartleft{
+        font-size: 100%;
+    }
+    .leftInnerScroll{
+        height: auto;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+    @media (max-width: 768px){
+        
+    }
+    
+
+}
 
 
 

@@ -1,6 +1,6 @@
 .footer{
     background-color: #FAE9F2;
-    height: 7rem;
+    height: 5.5rem;
     width: 100%;
 
 }
@@ -13,14 +13,14 @@
 .brandicons{
     width: 8rem;
     /* margin-top: 2rem; */
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .fa-whatsapp {
-    height: 2rem;
+    height: 1.5rem;
 }
 .fa-instagram {
-    height: 2rem;
+    height: 1.5rem;
 }
 .footerText{
     text-align: center;
