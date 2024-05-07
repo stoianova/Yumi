@@ -116,7 +116,7 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
                 <label htmlFor="apart">Apartment number *</label>
                 <input type="number" name="apart" id="apart"/> 
 
-                <label htmlFor="comments">Comments:</label>
+                <label htmlFor="comments">Comments: *</label>
                 <input type="text" name="comments" id="comments"/> 
                 
                 </div>

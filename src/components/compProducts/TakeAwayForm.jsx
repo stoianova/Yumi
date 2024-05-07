@@ -97,11 +97,10 @@ function TakeAwayForm({setAway, cart,  setTimerDown}) {
                     <input type="tel" id="number" /> 
 
                     <label htmlFor="time">Time to be ready at:</label>
-                    <p className='smallText'>We performing your order as soon as possible <br />
-                    However you can let us know if you need your order on specific time</p>
+                    <p className='smallText'>Let us know when you need your order: *</p>
                     <input type="time" id="time"/> 
 
-                    <label htmlFor="comments">Comments:</label>
+                    <label htmlFor="comments">Comments: *</label>
                     <input type="text" id="comments"/> 
 
                     </div>
