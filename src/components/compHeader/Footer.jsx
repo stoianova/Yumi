@@ -11,7 +11,7 @@ function Footer(props) {
     return (
         <>
         <div className='footer container-fluid'>
-            <div className="wrapperFooter container">
+            <div className="wrapperFooter container-fluid">
 
                 <div className="brandicons container d-flex justify-content-between">
                     {whatsappIcon}

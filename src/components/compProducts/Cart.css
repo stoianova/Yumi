@@ -2,13 +2,8 @@ article{
     width: 60%;
     height: 33rem;
     margin: auto;
-    margin-bottom: 20rem;
+    margin-bottom: 2rem;
     display: flex;
-    /* flex-direction: column; */
-    position: fixed;
-    top: 20%;
-    left: 20%;
-    z-index: 3;
 }
 .hidden{
     display: none;
@@ -183,13 +178,15 @@ article{
     
 }
 
-@media (max-width: 768px){
+@media (min-width: 460px) and  (max-width: 768px){
     article{
-        width: 70%;
+        width: 90%;
         height: auto;
         flex-direction: column;
         top: 10%;
         left: 0%;
+        margin: 2rem;
+
     }
     .cartBox{
         width: 100%;
@@ -206,6 +203,7 @@ article{
         border-bottom-left-radius: .0rem;
         border-top-right-radius: .8rem;
         overflow: scroll;
+        margin: auto;
     }
     
     .infoCartleft{
@@ -217,13 +215,49 @@ article{
         z-index: 5;
     }
 
-    @media (max-width: 768px){
-        
-    }
     
 
 }
 
+@media (max-width: 460px){
+    article{
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        /* top: 10%;
+        left: 0%; */
+        margin-top: 2rem;
+    }
+    .cartBox{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .cartObject{
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+    .leftSideCart{
+        width: 100%;
+        height: auto;
+        border-bottom-left-radius: .0rem;
+        border-top-right-radius: .8rem;
+        overflow: scroll;
+        margin: auto;
+
+    }
+    
+    .infoCartleft{
+        font-size: 100%;
+    }
+    .leftInnerScroll{
+        height: auto;
+        overflow: hidden;
+        z-index: 5;
+    }
+
+
+}
 
 
 
