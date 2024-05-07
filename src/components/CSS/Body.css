@@ -47,7 +47,7 @@
     height: /* 2.2rem; */ 2vw;
     justify-content: center;
     align-items: center;
-    font-size: 50%;
+    font-size: 100%;
     letter-spacing: .5rem;
     border-radius: 0.45rem;
 }
