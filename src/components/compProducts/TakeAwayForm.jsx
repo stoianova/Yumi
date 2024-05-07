@@ -19,7 +19,7 @@ function TakeAwayForm({setAway, cart,  setTimerDown}) {
         let comments = document.querySelector ('#comments');
 
 
-        if(number.value.length >1 && name.value.length >1 && time.value.length >1 && comments.value.length >1){
+        if(number.value.length >=1 && name.value.length >=1 && time.value.length >=1 && comments.value.length >=1){
             submitButton.removeAttribute('disabled')
         }
         else{

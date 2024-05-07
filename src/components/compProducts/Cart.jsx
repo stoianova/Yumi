@@ -14,7 +14,6 @@ const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
     const [price, setPrice] = useState(0);
     const [delivery, setDelivery] = useState(true);
     const [away, setAway] = useState(true);
-    // const [timerDown, setTimerDown] = useState(false)
 
 
     const closeMark = <FontAwesomeIcon icon={faXmark}/>

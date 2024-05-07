@@ -19,7 +19,7 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
         let comments = document.querySelector ('#comments');
 
 
-        if(number.value.length == 12 && name.value.length >1 && street.value.length >1 && build.value.length >1 && apart.value.length >1 && comments.value.length >1 ){
+        if(number.value.length === 12 && name.value.length >=1 && street.value.length >=1 && build.value.length >=1 && apart.value.length >=1 && comments.value.length >=1 ){
             submitButton.removeAttribute('disabled')
         }
         else{
@@ -97,7 +97,6 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
             <form action='' className='delTypeForm' onChange={firstFun} onSubmit={secondFun}>
                     <div className="orderText"> Your details for DELIVERY </div>
 
-                {/* <div className='biggerDelForm'> */}
                 <div className="innerFormDiv">
                 <div className='orderForm'>
 
@@ -128,7 +127,6 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
                     <div className="btnBack" onClick={() => setDelivery(true)} >Back</div>
                     <input type="submit" id="submitButton" value="Send" disabled /> 
                     
-                    {/* <button onClick={() => setTimerDown(true)}>button</button> */}
                 </div>
 
             </form>
