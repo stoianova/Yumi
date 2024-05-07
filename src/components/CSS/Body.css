@@ -99,7 +99,7 @@
 
 .timer{
   width: 15rem;
-  height: 10rem;
+  height: auto;
   background-color: #fff;
   border-radius: 1rem;
   text-align: center;
