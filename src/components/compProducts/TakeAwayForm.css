@@ -10,7 +10,7 @@
     width: 5rem;
     height: 3rem;
     text-align: center;
-    padding: 0.5rem 0rem;
+    /* padding: auto ; */
     border: unset;
     border-radius: 15px;
     color: #4D5E7C;
@@ -42,28 +42,6 @@
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms
 }
-
-/* #submitButton:hover{
-    color: #ffffff;
-    background-color: #4D5E7C;
-}
-#submitButton:hover::before{
-    width: 100%;
-}
-#submitButton::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 1rem;
-    background-color: #4D5E7C;
-    z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms
-} */
 
 .takeAwayForm > form:nth-child(1) > p:nth-child(3) {
     margin-left: 2rem;

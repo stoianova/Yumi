@@ -8,7 +8,7 @@ import Timer from './Timer'
 import App, { Basket } from '../../App'
 
 
-function TakeAwayForm({setAway, cart,  setTimerDown}) {
+function TakeAwayForm({setAway, setCart, cart,  setTimerDown}) {
 
     const basket = useContext(Basket);
 
@@ -74,7 +74,7 @@ function TakeAwayForm({setAway, cart,  setTimerDown}) {
 
 
             setTimeout(function another(){
-
+                setCart([]);
                 let inputs = document.querySelectorAll('input')
                 for( let some of inputs){
                     some.value = ''
@@ -96,8 +96,8 @@ function TakeAwayForm({setAway, cart,  setTimerDown}) {
                     <label htmlFor="number">Enter your phone number *</label>
                     <input type="tel" id="number" /> 
 
-                    <label htmlFor="time">Time to be ready at:</label>
-                    <p className='smallText'>Let us know when you need your order: *</p>
+                    <label htmlFor="time">Time to be ready at: *</label>
+                    <p className='smallText'>Let us know when you need your order:</p>
                     <input type="time" id="time"/> 
 
                     <label htmlFor="comments">Comments: *</label>

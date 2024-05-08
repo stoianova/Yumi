@@ -31,12 +31,3 @@ export const validTime = new RegExp(
 export const validComments = new RegExp(
     /\W{1,1000}/
 );
-
-
-
-// if(validNumber.test(number.value) && validName.test(name.value) && time.value.length >1 && comments.value.length >1){
-//     submitButton.removeAttribute('disabled')
-// }
-// else{
-//     submitButton.setAttribute('disabled', true)
-// }   }

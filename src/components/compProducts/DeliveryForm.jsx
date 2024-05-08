@@ -6,7 +6,7 @@ import App, { Basket } from '../../App'
 import Timer from './Timer'
 
 
-function DeliveryForm({setDelivery, cart, setTimerDown}) {
+function DeliveryForm({setDelivery, setCart, cart, setTimerDown}) {
 
     const basket = useContext(Basket);
 
@@ -86,6 +86,7 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
 
 
             setTimeout(function another(){
+                setCart([]);
                 let inputs = document.querySelectorAll('input')
                 for( let some of inputs){
                     some.value = ''
