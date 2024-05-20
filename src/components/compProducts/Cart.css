@@ -128,14 +128,13 @@ background-color: rgb(250,233,242);
     font-weight: bold;
     background-color: #e6eefb;
     width: 8rem;
-    margin: 1rem 0rem 1rem 2rem;
+    margin: 1rem 0rem 0rem 2rem;
 }
 .cashDiv{
     color: #4D5E7C;
     font-weight: lighter;
     margin-left: 2rem;
     font-style: italic;
-    margin-bottom: 2rem;
 }
 .bottomPart{
     display: flex;
@@ -166,6 +165,9 @@ background-color: rgb(250,233,242);
 .leftInnerScroll{
     height: 65%;
     overflow: scroll;
+    height: 26rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .innerRighrSide{
     text-align: center;

@@ -1,7 +1,38 @@
 import React from 'react';
 import '../CSS/Body.css'
 
+<<<<<<< HEAD
 function Timer({minutes, seconds}) {
+=======
+function Timer() {
+    const [seconds, setSeconds] = useState(59);
+    const [minutes, setMinutes] = useState(30);
+    const [timerDown, setTimerDown] = useState(false);
+
+
+    let timer;
+    useEffect(() => {
+        timer = setInterval(() => {
+            setSeconds(seconds-1)
+            if(seconds===0){
+                setMinutes(minutes-1)
+                setSeconds(59);
+            }
+        },1000)
+        return () => clearInterval(timer);
+    })
+
+    const stop =() => {
+        clearInterval(timer);
+        // return <h2> Courier will be with you very soon! Thank you for waiting </h2>
+    }
+
+    const restart = () => {
+        setSeconds(59);
+        setMinutes(10);
+        return <p>Out courier will be with you very soon!</p>
+    }
+>>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
 
     return (
         <div className='timer'>

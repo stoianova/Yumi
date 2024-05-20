@@ -40,10 +40,17 @@ const Cart = ({cart, setCart, setSeconds,setMinutes, setShow, handleChange, setT
         return <OrderTypeForm setDelivery={setDelivery} setAway={setAway} />
         }
         else if (delivery === true && away !== true){ 
+<<<<<<< HEAD
         return <TakeAwayForm setAway={setAway} setMinutes={setMinutes} setSeconds={setSeconds} setShow={setShow} setCart={setCart} cart={cart} setTimerDown={setTimerDown}/>
         }
         else if (delivery !== true && away === true){ 
         return <DeliveryForm setDelivery={setDelivery} cart={cart}  setMinutes={setMinutes} setSeconds={setSeconds} setCart={setCart}/>
+=======
+        return <TakeAwayForm setAway={setAway} setShow={setShow} setCart={setCart} cart={cart} setTimerDown={setTimerDown}/>
+        }
+        else if (delivery !== true && away === true){ 
+        return <DeliveryForm setDelivery={setDelivery} setCart={setCart} cart={cart}/>
+>>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
         }   }
 
     return (
