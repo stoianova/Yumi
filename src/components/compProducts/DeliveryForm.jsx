@@ -1,12 +1,10 @@
 import React, {useContext} from 'react';
 import './DeliveryForm.css';
-// import {myObj} from './Fetch/MyFetch';
-import Cart from './Cart';
-import App, { Basket } from '../../App'
-import Timer from './Timer'
+import { Basket } from '../../App'
 
 
-function DeliveryForm({setDelivery, cart, setTimerDown}) {
+
+function DeliveryForm({setDelivery, setCart, setTimerDown}) {
 
     const basket = useContext(Basket);
 
@@ -86,6 +84,9 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
 
 
             setTimeout(function another(){
+                setCart([])
+                setMinutes(29)
+                setSeconds(59)
                 let inputs = document.querySelectorAll('input')
                 for( let some of inputs){
                     some.value = ''
@@ -94,8 +95,9 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
 
     return (
         <div className="takeAwayForm">
+        
             <form action='' className='delTypeForm' onChange={firstFun} onSubmit={secondFun}>
-                    <div className="orderText"> Your details for DELIVERY </div>
+                    <div className="orderText"> Your details for DELIVERY  </div>
 
                 <div className="innerFormDiv">
                 <div className='orderForm'>
@@ -117,7 +119,7 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
                 <input type="number" name="apart" id="apart"/> 
 
                 <label htmlFor="comments">Comments: *</label>
-                <input type="text" name="comments" id="comments"/> 
+                <input type="text" name="comments" id="comments" defaultValue={"Have a good day!"}/> 
                 
                 </div>
             </div>
@@ -125,8 +127,7 @@ function DeliveryForm({setDelivery, cart, setTimerDown}) {
                 <div className="takeBtns">
 
                     <div className="btnBack" onClick={() => setDelivery(true)} >Back</div>
-                    <input type="submit" id="submitButton" value="Send" disabled /> 
-                    
+                    <button type="submit" id="submitButton" disabled>Send</button>
                 </div>
 
             </form>

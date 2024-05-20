@@ -3,13 +3,12 @@ import './Cart.css'
 import './OrderTypeForm.css'
 import OrderTypeForm from './OrderTypeForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import DeliveryForm from './DeliveryForm';
 import TakeAwayForm from './TakeAwayForm';
-import Timer from './Timer';
 
 
-const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
+const Cart = ({cart, setCart, setSeconds,setMinutes, setShow, handleChange, setTimerDown}) => {
 
     const [price, setPrice] = useState(0);
     const [delivery, setDelivery] = useState(true);
@@ -38,20 +37,21 @@ const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
 
     function myfun (){
         if (delivery === true && away === true){ 
-        return <OrderTypeForm setDelivery={setDelivery} setAway={setAway}/>
+        return <OrderTypeForm setDelivery={setDelivery} setAway={setAway} />
         }
         else if (delivery === true && away !== true){ 
-        return <TakeAwayForm setAway={setAway} setShow={setShow} cart={cart} setTimerDown={setTimerDown}/>
+        return <TakeAwayForm setAway={setAway} setMinutes={setMinutes} setSeconds={setSeconds} setShow={setShow} setCart={setCart} cart={cart} setTimerDown={setTimerDown}/>
         }
         else if (delivery !== true && away === true){ 
-        return <DeliveryForm setDelivery={setDelivery} cart={cart}/>
+        return <DeliveryForm setDelivery={setDelivery} cart={cart}  setMinutes={setMinutes} setSeconds={setSeconds} setCart={setCart}/>
         }   }
 
     return (
+<div id='wrapperForMenu'>
+        <article id='menus'>           
 
-        <article>           
-
-                <div className="leftSideCart"> 
+                <div className="leftSideCart">
+                    <div id='close' onClick={() => setShow(false)}>Close</div>
                     <div className='leftInnerScroll'>
             {
             cart?.map((item)=>(
@@ -94,7 +94,7 @@ const Cart = ({cart, setCart, setShow, handleChange, setTimerDown}) => {
                 myfun()
             }
 
-        </article>
+        </article></div>
     );
 
 }

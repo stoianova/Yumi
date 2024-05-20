@@ -2,14 +2,23 @@
     display: flex;
     
 }
+#time{
+    width: 32%;
+    font-size: 90%;
+
+}
 .delTypeForm{
     margin: 0rem 1rem;
 }
-
+.takeAwayForm{
+    height: 100%;
+    overflow: scroll;
+}
+.takeBtns{
+    margin-bottom: 3%;
+}
 #submitButton{
     width: 5rem;
-    height: 3rem;
-    text-align: center;
     padding: 0.5rem 0rem;
     border: unset;
     border-radius: 15px;
@@ -21,6 +30,8 @@
     font-weight: 700;
     transition: all 250ms;
     margin: 0rem 0rem 0rem 4rem;
+    height: 10%;
+   
 }
 #submitButton:hover{
     color: #ffffff;
@@ -43,28 +54,6 @@
     transition: all 250ms
 }
 
-/* #submitButton:hover{
-    color: #ffffff;
-    background-color: #4D5E7C;
-}
-#submitButton:hover::before{
-    width: 100%;
-}
-#submitButton::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 1rem;
-    background-color: #4D5E7C;
-    z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms
-} */
-
 .takeAwayForm > form:nth-child(1) > p:nth-child(3) {
     margin-left: 2rem;
     color: #4D5E7C;
@@ -78,12 +67,23 @@
 
 @media screen and (min-width:1024px) and (max-width: 1240px){
 
-    
+   
+    .takeAwayForm{
+        width: 80%;
+        margin: auto;
+        height: 100%;
+
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
 
-    
+    .takeAwayForm{
+        width: 80%;
+        margin: auto;
+        height: 100%;
+
+    }
 }
 
 @media (min-width: 460px) and  (max-width: 768px){
@@ -93,11 +93,13 @@
         border-bottom-right-radius: .8rem;
         border-top-right-radius: .0rem;
         margin: auto;
+        height: 50vh;
 
     }
     input{
         padding: .2rem .5rem;
     }
+  
     
 }
 
@@ -108,9 +110,10 @@
         border-bottom-right-radius: .8rem;
         border-top-right-radius: .0rem;
         margin: auto;
-
+        height: 50vh;
     }
     input{
         padding: .2rem .5rem;
     }
+ 
 }

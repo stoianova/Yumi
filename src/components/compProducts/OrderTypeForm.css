@@ -6,10 +6,10 @@
     border-bottom-right-radius: .8rem;
     box-shadow: 0px 0px 8px 5px rgb(195, 211, 240);
     background-color: rgb(254, 254, 255);
+    
 }
 .deliveryType button{
     letter-spacing: 0.1rem;
-    /* width: 18rem; */
     padding: 15px 25px;
     border: unset;
     border-radius: 15px;
@@ -18,8 +18,10 @@
     background: #deebff3c;
     position: relative;
     font-size: 17px;
-    margin: 1rem auto;    transition: all 250ms;
+    margin: 1rem auto; 
+    transition: all 250ms;
     overflow: hidden;
+    
 }
 .deliveryType button:hover{
     color: #ffffff;
@@ -56,7 +58,7 @@
 
 .btnBack{
     width: 5rem;
-    height: 3rem;
+    height: 10%;
     text-align: center;
     padding: 0.5rem 0rem;
     border: unset;
@@ -70,6 +72,7 @@
     transition: all 250ms;
     overflow: hidden;
     cursor: pointer;
+    text-align: center;
 }
 .btnBack:hover{
     color: #ffffff;
@@ -142,17 +145,12 @@ svg.fa-circle:nth-child(7){
 
 
 
-
-@media screen and (min-width:1024px) and (max-width: 1240px){
-
-    
-}
-
 @media (min-width: 768px) and (max-width: 1024px){
 
     .deliveryType{
         width: 50%;
         padding: 0rem .5rem;
+        
     }
     
     
@@ -169,6 +167,7 @@ svg.fa-circle:nth-child(7){
         border-top-right-radius: 0rem;
         border-bottom-left-radius: .8rem;
         margin: auto;
+        height: 55vh;
 
     }
     input{
@@ -186,6 +185,7 @@ svg.fa-circle:nth-child(7){
         padding: 0rem .5rem;
         border-top-right-radius: 0rem;
         border-bottom-left-radius: .8rem;
+        height: 55vh;
     }
     input{
         padding: .2rem .5rem;

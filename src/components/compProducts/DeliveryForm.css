@@ -11,7 +11,7 @@
     color: #4D5E7C; 
     margin: 1rem;
     padding: 1rem 0rem; 
-    height: 22rem;/* 18rem; */
+    height: 100%;
     overflow-y: scroll;
 }
 .orderText{
@@ -29,7 +29,7 @@ input{
     margin-left: 2rem;
 }
 #comments{
-    height: 5rem;
+    height: 10%;
     text-align: start;
     overflow-y: scroll;
 } 
@@ -41,7 +41,7 @@ label{
     margin: 2rem auto 1rem;
     background-color: #4D5E7C;
     color: white;
-    width: 18rem;
+    width: 80%;
     padding: 10px 20px;
     border-radius: 15px;
     font-size: 17px;
