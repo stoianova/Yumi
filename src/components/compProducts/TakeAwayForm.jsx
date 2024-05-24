@@ -4,7 +4,11 @@ import './DeliveryForm.css';
 import { Basket } from '../../App'
 
 
+<<<<<<< HEAD
+function TakeAwayForm({setAway, setCart, setSeconds, setMinutes, setTimerDown}) {
+=======
 function TakeAwayForm({setAway, setCart, cart,  setTimerDown}) {
+>>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
 
     const basket = useContext(Basket);
 
@@ -94,9 +98,15 @@ let time = `${date.getHours()}:${date.getMinutes()}`
                     <label htmlFor="number">Enter your phone number *</label>
                     <input type="tel" id="number" /> 
 
+<<<<<<< HEAD
+                    <label htmlFor="time">Time to be ready at:</label>
+                    <p className='smallText'>Let us know when you need your order: *</p>
+                    <input type="time" id="time" defaultValue={time}/> 
+=======
                     <label htmlFor="time">Time to be ready at: *</label>
                     <p className='smallText'>Let us know when you need your order:</p>
                     <input type="time" id="time"/> 
+>>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
 
                     <label htmlFor="comments">Comments: *</label>
                     <input type="text" id="comments"  defaultValue={"Have a good day!"} /> 
