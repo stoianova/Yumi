@@ -1,14 +1,12 @@
 import React, {useContext} from 'react';
 import './DeliveryForm.css';
-import { Basket } from '../../App'
+// import {myObj} from './Fetch/MyFetch';
+import Cart from './Cart';
+import App, { Basket } from '../../App'
+import Timer from './Timer'
 
 
-<<<<<<< HEAD
-
-function DeliveryForm({setDelivery, setCart, setTimerDown}) {
-=======
 function DeliveryForm({setDelivery, setCart, cart, setTimerDown}) {
->>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
 
     const basket = useContext(Basket);
 
@@ -88,13 +86,7 @@ function DeliveryForm({setDelivery, setCart, cart, setTimerDown}) {
 
 
             setTimeout(function another(){
-<<<<<<< HEAD
-                setCart([])
-                setMinutes(29)
-                setSeconds(59)
-=======
                 setCart([]);
->>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
                 let inputs = document.querySelectorAll('input')
                 for( let some of inputs){
                     some.value = ''
@@ -103,9 +95,8 @@ function DeliveryForm({setDelivery, setCart, cart, setTimerDown}) {
 
     return (
         <div className="takeAwayForm">
-        
             <form action='' className='delTypeForm' onChange={firstFun} onSubmit={secondFun}>
-                    <div className="orderText"> Your details for DELIVERY  </div>
+                    <div className="orderText"> Your details for DELIVERY </div>
 
                 <div className="innerFormDiv">
                 <div className='orderForm'>
@@ -127,7 +118,7 @@ function DeliveryForm({setDelivery, setCart, cart, setTimerDown}) {
                 <input type="number" name="apart" id="apart"/> 
 
                 <label htmlFor="comments">Comments: *</label>
-                <input type="text" name="comments" id="comments" defaultValue={"Have a good day!"}/> 
+                <input type="text" name="comments" id="comments"/> 
                 
                 </div>
             </div>
@@ -135,7 +126,8 @@ function DeliveryForm({setDelivery, setCart, cart, setTimerDown}) {
                 <div className="takeBtns">
 
                     <div className="btnBack" onClick={() => setDelivery(true)} >Back</div>
-                    <button type="submit" id="submitButton" disabled>Send</button>
+                    <input type="submit" id="submitButton" value="Send" disabled /> 
+                    
                 </div>
 
             </form>

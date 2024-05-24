@@ -11,6 +11,8 @@ function SProductCardFirst() {
     return (
         <div className='allProdCards'>
         <div className='productCartFirst'>
+
+            {/* <div className='SProductCardFirst'> */}
                 <div className="imageFirst d-flex justify-content-center">
                     <img src={FirstProduct} alt="" />
                 </div>
@@ -20,6 +22,7 @@ function SProductCardFirst() {
                 <p>$ 6.5</p>
             </div>
             </div>
+        {/* </div> */}
         
         <div className='ProductCardSecond'>
 
