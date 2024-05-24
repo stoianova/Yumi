@@ -14,7 +14,6 @@ import Image12 from './fixedMenu/image12.png'
 import Image13 from './fixedMenu/image13.png'
 import Image14 from './fixedMenu/image14.png'
 import Image15 from './fixedMenu/image15.png'
-// import { myObj } from './Fetch/MyFetch';
 
 
         const listProducts = [

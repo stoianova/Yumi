@@ -1,6 +1,5 @@
 import React from 'react';
 import BackgroungImage from '../../img/fixed/fix3.jpeg'
-// import '../CSS/BackgroundImage.css'
 import '../CSS/Body.css'
 
 

@@ -1,13 +1,9 @@
 
 export const validName = new RegExp(
-    // '^[a-z]{2,30}$/i'
-    // /^([A-z])+(.?[a-zA-Z])('?[a-zA-Z])$/
     /\W{10,11}/
 );
 
 export const validNumber = new RegExp(
-    // /^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/
-    // /^[0-9]{12}$/
     /^[380]+[0-9]{9}$/gm
 );
 
@@ -31,3 +27,9 @@ export const validTime = new RegExp(
 export const validComments = new RegExp(
     /\W{1,1000}/
 );
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
