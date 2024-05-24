@@ -2,10 +2,21 @@
     display: flex;
     
 }
+#time{
+    width: 32%;
+    font-size: 90%;
+
+}
 .delTypeForm{
     margin: 0rem 1rem;
 }
-
+.takeAwayForm{
+    height: 100%;
+    overflow: scroll;
+}
+.takeBtns{
+    margin-bottom: 3%;
+}
 #submitButton{
     width: 5rem;
     height: 3rem;
@@ -21,6 +32,8 @@
     font-weight: 700;
     transition: all 250ms;
     margin: 0rem 0rem 0rem 4rem;
+    height: 10%;
+   
 }
 #submitButton:hover{
     color: #ffffff;
@@ -56,12 +69,23 @@
 
 @media screen and (min-width:1024px) and (max-width: 1240px){
 
-    
+   
+    .takeAwayForm{
+        width: 80%;
+        margin: auto;
+        height: 100%;
+
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
 
-    
+    .takeAwayForm{
+        width: 80%;
+        margin: auto;
+        height: 100%;
+
+    }
 }
 
 @media (min-width: 460px) and  (max-width: 768px){
@@ -71,11 +95,13 @@
         border-bottom-right-radius: .8rem;
         border-top-right-radius: .0rem;
         margin: auto;
+        height: 50vh;
 
     }
     input{
         padding: .2rem .5rem;
     }
+  
     
 }
 
@@ -86,9 +112,10 @@
         border-bottom-right-radius: .8rem;
         border-top-right-radius: .0rem;
         margin: auto;
-
+        height: 50vh;
     }
     input{
         padding: .2rem .5rem;
     }
+ 
 }
