@@ -3,12 +3,8 @@ import './DeliveryForm.css';
 import { Basket } from '../../App'
 
 
-<<<<<<< HEAD
 
 function DeliveryForm({setDelivery, setCart, setTimerDown}) {
-=======
-function DeliveryForm({setDelivery, setCart, cart, setTimerDown}) {
->>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
 
     const basket = useContext(Basket);
 
@@ -88,13 +84,9 @@ function DeliveryForm({setDelivery, setCart, cart, setTimerDown}) {
 
 
             setTimeout(function another(){
-<<<<<<< HEAD
                 setCart([])
                 setMinutes(29)
                 setSeconds(59)
-=======
-                setCart([]);
->>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
                 let inputs = document.querySelectorAll('input')
                 for( let some of inputs){
                     some.value = ''

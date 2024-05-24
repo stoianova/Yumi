@@ -27,9 +27,6 @@ export const validTime = new RegExp(
 export const validComments = new RegExp(
     /\W{1,1000}/
 );
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> c0da81378ff06679d0ab43159755065cf1132f35

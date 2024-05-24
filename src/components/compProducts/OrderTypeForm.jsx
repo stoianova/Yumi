@@ -16,10 +16,6 @@ const OrderTypeForm = ({setDelivery, setAway}) => {
                 <button onClick={() => setDelivery(false)} >Delivery with Yumi courier</button>
                 </div>
             </div>
-<<<<<<< HEAD
-=======
-            
->>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
         </>
     );
 }

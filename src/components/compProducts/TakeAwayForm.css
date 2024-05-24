@@ -19,13 +19,7 @@
 }
 #submitButton{
     width: 5rem;
-<<<<<<< HEAD
     padding: 0.5rem 0rem;
-=======
-    height: 3rem;
-    text-align: center;
-    /* padding: auto ; */
->>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
     border: unset;
     border-radius: 15px;
     color: #4D5E7C;
