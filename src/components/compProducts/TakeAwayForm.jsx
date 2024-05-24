@@ -1,14 +1,14 @@
 import React, { useState, useContext, createContext } from 'react';
 import './TakeAwayForm.css'
 import './DeliveryForm.css';
-import { Basket } from '../../App'
+// import {validName, validNumber} from './RegEx';
+import Cart from './Cart';
+// import {myObj} from './Fetch/MyFetch';
+import Timer from './Timer'
+import App, { Basket } from '../../App'
 
 
-<<<<<<< HEAD
-function TakeAwayForm({setAway, setCart, setSeconds, setMinutes, setTimerDown}) {
-=======
 function TakeAwayForm({setAway, setCart, cart,  setTimerDown}) {
->>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
 
     const basket = useContext(Basket);
 
@@ -62,27 +62,25 @@ function TakeAwayForm({setAway, setCart, cart,  setTimerDown}) {
               })
                  .then((response) => response.json())
                  .then((data) => {
-                    console.log(data)
+                    console.log(data);
+                    // console.log(cart);
                  })
                  .catch((err) => {
                     console.log(err.message);
                  });
 
+            let timer = document.querySelector('.timer')
+            timer.removeAttribute('hidden')
+
 
             setTimeout(function another(){
                 setCart([]);
                 let inputs = document.querySelectorAll('input')
-                setCart([])
-                setMinutes(29)
-                setSeconds(59)
-                setTimerDown(true)
                 for( let some of inputs){
                     some.value = ''
                 }
             }, 0)
     }
-let date = new Date()
-let time = `${date.getHours()}:${date.getMinutes()}`
 
     return (
         <div className="takeAwayForm">
@@ -98,25 +96,20 @@ let time = `${date.getHours()}:${date.getMinutes()}`
                     <label htmlFor="number">Enter your phone number *</label>
                     <input type="tel" id="number" /> 
 
-<<<<<<< HEAD
-                    <label htmlFor="time">Time to be ready at:</label>
-                    <p className='smallText'>Let us know when you need your order: *</p>
-                    <input type="time" id="time" defaultValue={time}/> 
-=======
                     <label htmlFor="time">Time to be ready at: *</label>
                     <p className='smallText'>Let us know when you need your order:</p>
                     <input type="time" id="time"/> 
->>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
 
                     <label htmlFor="comments">Comments: *</label>
-                    <input type="text" id="comments"  defaultValue={"Have a good day!"} /> 
+                    <input type="text" id="comments"/> 
 
                     </div>
             </div>
 
             <div className="takeBtns">
                 <div className="btnBack" onClick={() => setAway(true)} >Back</div>
-                <button type="submit" id="submitButton" disabled>Send</button>
+                <input type="submit" id="submitButton" value="Send" disabled/> 
+                {/* <button onClick={() => setTimerDown(true)}>button</button> */}
             </div>    
 
             </form>

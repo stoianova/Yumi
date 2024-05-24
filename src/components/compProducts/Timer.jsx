@@ -1,9 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../CSS/Body.css'
 
-<<<<<<< HEAD
-function Timer({minutes, seconds}) {
-=======
 function Timer() {
     const [seconds, setSeconds] = useState(59);
     const [minutes, setMinutes] = useState(30);
@@ -32,17 +29,15 @@ function Timer() {
         setMinutes(10);
         return <p>Out courier will be with you very soon!</p>
     }
->>>>>>> c0da81378ff06679d0ab43159755065cf1132f35
 
     return (
-        <div className='timer'>
+        <div className='timer' hidden>
             <div className="container">
                 <div className="timer_container">
                     <h2>Thank you for the order!</h2>
                     <h1 className='timerH1'>Our courier will arrive in:</h1>
                     <h1 className='timerH1time'>
-                        {minutes < 10 ? '0' + minutes : minutes}
-                        : {seconds < 10 ? '0' +seconds : seconds}
+                        {minutes < 10 ? '0' + minutes : minutes} : {seconds < 10 ? '0' +seconds : seconds}
                     </h1>
                 </div>
             </div>

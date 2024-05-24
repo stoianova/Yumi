@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// import './OpinionSubmit.css';
 import ClientPic1 from '../../img/clientsPics/rev4.png';
 import ClientPic2 from '../../img/clientsPics/rev6.png';
 import ClientPic3 from '../../img/clientsPics/rev2.png';

@@ -12,27 +12,10 @@ export const Basket = createContext();
 
 const App = () => {
 
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
   const [warning, setWarning] = useState(false);
-  
-    const [seconds, setSeconds] = useState(59);
-    const [minutes, setMinutes] = useState(30);
-    const [timerDown, setTimerDown] = useState(false);
-
-
-    let timer;
-    useEffect(() => {
-        timer = setInterval(() => {
-            setSeconds(seconds-1)
-            if(seconds===0){
-                setMinutes(minutes-1)
-                setSeconds(59);
-            }
-        },1000)
-        return () => clearInterval(timer);
-    })
-
+  const [timerDown, setTimerDown] = useState(false)
 
   const handleClick = (item) => {
     let isPresent = false;
@@ -65,23 +48,24 @@ const App = () => {
     setCart([...tempArr])
   }
 
-  
+  {
+    timerDown ? <Timer setTimerDown={setTimerDown}/> : <div></div> 
+  } 
      
 
   return (
     <Basket.Provider value={cart}>
       <div className='mediaDivFirst'>
       <Header size={cart.length} setShow={setShow}/>
-<ProductsSection handleClick={handleClick} />
+
       {
-        show && <Cart setSeconds={setSeconds}  setMinutes={setMinutes} cart={cart} 
-        setCart={setCart} setShow={setShow} handleChange={handleChange} setTimerDown={setTimerDown}/>
+        show ? <ProductsSection handleClick={handleClick} /> : <Cart cart={cart} setCart={setCart} setShow={setShow} handleChange={handleChange} setTimerDown={setTimerDown}/>
       }
       </div>
       
       {
-    timerDown && <Timer minutes={minutes} seconds={seconds}/>  
-  } 
+        <Timer />
+      }
 
       <Footer/>
     
