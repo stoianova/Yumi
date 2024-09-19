@@ -20,7 +20,7 @@ article{
     margin-left: 5%;
     margin-top: 2%;
     border: 1px solid rgb(76, 76, 147);
-    border-radius: 30%;
+    border-radius: 45%;
     background-color:rgb(246,249,255);
     padding: 0% 1%;
     font-size: 90%;
@@ -135,6 +135,7 @@ background-color: rgb(250,233,242);
     font-weight: lighter;
     margin-left: 2rem;
     font-style: italic;
+    margin-bottom: 10px;
 }
 .bottomPart{
     display: flex;

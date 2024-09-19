@@ -22,7 +22,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'CREME DE LA CREME',
             localname: '流金蛋糕初茶',
             price: 6,
-            image: Image1,
+            imagePath: Image1,
             amount: 1
         },
         {
@@ -30,7 +30,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'OREO GALAXY CREME ',
             localname: '星空蛋糕初茶',
             price: 7,
-            image: Image2,
+            imagePath: Image2,
             amount: 1
         },
         {
@@ -38,7 +38,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'STRAWBERRY CAKE CREME ',
             localname: '熔岩蛋糕初茶',
             price: 6.5,
-            image: Image3,
+            imagePath: Image3,
             amount: 1
         },
         {
@@ -46,7 +46,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'GOLDEN MANGO GREEN TEA',
             localname: '芒果满满',
             price: 4,
-            image: Image4,
+            imagePath: Image4,
             amount: 1
         },
         {
@@ -54,7 +54,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'LYCHEE DRAGON FRUIT',
             localname: '荔枝火龙果',
             price: 6,
-            image: Image5,
+            imagePath: Image5,
             amount: 1
         },
         {
@@ -62,7 +62,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'STRAWBERRY PEACH FUSION',
             localname: '枸星龙鲜龙苺',
             price: 4,
-            image: Image6,
+            imagePath: Image6,
             amount: 1
         },
         {
@@ -70,7 +70,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'FLORAL OOLONG LATTE',
             localname: '星星乌龙鲜牛乳',
             price: 5,
-            image: Image7,
+            imagePath: Image7,
             amount: 1
         },
         {
@@ -78,7 +78,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'DELUXE PURPLE YAM',
             localname: '流沙燕麦紫薯',
             price: 6,
-            image: Image8,
+            imagePath: Image8,
             amount: 1
         },
         {
@@ -86,7 +86,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'HERBAL GOJI BERRY TEA',
             localname: '枸杞菊花茶',
             price: 5,
-            image: Image9,
+            imagePath: Image9,
             amount: 1
         },
         {
@@ -94,7 +94,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'PEACH OOLONG',
             localname: '白桃乌龙',
             price: 4,
-            image: Image10,
+            imagePath: Image10,
             amount: 1
         },
         {
@@ -102,7 +102,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'TRU MILK TEA',
             localname: '乌龙',
             price: 5.5,
-            image: Image11,
+            imagePath: Image11,
             amount: 1
         },
         {
@@ -110,7 +110,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'FRESH TARO TRU TEA',
             localname: '芋泥紫米初茶',
             price: 6,
-            image: Image12,
+            imagePath: Image12,
             amount: 1
         },
         {
@@ -118,7 +118,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'SOY PUDDING TRU TEA',
             localname: '豆香初茶',
             price: 6.5,
-            image: Image13,
+            imagePath: Image13,
             amount: 1
         },
         {
@@ -126,7 +126,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'STRAWBERRY TRUPIOCA',
             localname: '手作草莓初丸',
             price: 5,
-            image: Image14,
+            imagePath: Image14,
             amount: 1
         },
         {
@@ -134,7 +134,7 @@ import Image15 from './fixedMenu/image15.png'
             name: 'MANGO TRUPIOCA',
             localname: '手作芒果初丸',
             price: 5,
-            image: Image15,
+            imagePath: Image15,
             amount: 1
         }];
 

@@ -148,7 +148,7 @@
 
 .allProdCards{
   display: grid;
-  grid-template-columns: repeat(10, 10rem);
+  grid-template-columns: repeat(10, 14rem);
   grid-template-rows: repeat(10, 10rem);
   column-gap: 3rem;
   row-gap: 1rem;
